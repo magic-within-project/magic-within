@@ -17,6 +17,13 @@ export const env = createEnv({
    */
   client: {
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
+    NEXT_PUBLIC_FB_APIKEY: z.string(),
+    NEXT_PUBLIC_FB_AUTHDOMAIN: z.string(),
+    NEXT_PUBLIC_FB_PROJECTID: z.string(),
+    NEXT_PUBLIC_FB_STORAGEBUCKET: z.string(),
+    NEXT_PUBLIC_FB_MESSAGINGSENDERID: z.string(),
+    NEXT_PUBLIC_FB_APPID: z.string(),
+    NEXT_PUBLIC_FB_MEASUREMENTID: z.string()
   },
 
   /**
@@ -26,6 +33,13 @@ export const env = createEnv({
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
+    NEXT_PUBLIC_FB_APIKEY: process.env.NEXT_PUBLIC_FB_APIKEY,
+    NEXT_PUBLIC_FB_AUTHDOMAIN: process.env.NEXT_PUBLIC_FB_AUTHDOMAIN,
+    NEXT_PUBLIC_FB_PROJECTID: process.env.NEXT_PUBLIC_FB_PROJECTID,
+    NEXT_PUBLIC_FB_STORAGEBUCKET: process.env.NEXT_PUBLIC_FB_STORAGEBUCKET,
+    NEXT_PUBLIC_FB_MESSAGINGSENDERID: process.env.NEXT_PUBLIC_FB_MESSAGINGSENDERID,
+    NEXT_PUBLIC_FB_APPID: process.env.NEXT_PUBLIC_FB_APPID,
+    NEXT_PUBLIC_FB_MEASUREMENTID: process.env.NEXT_PUBLIC_FB_MEASUREMENTID
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
