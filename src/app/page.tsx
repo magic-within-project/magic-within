@@ -13,15 +13,15 @@ export default function HomePage() {
             href="https://create.t3.gg/en/usage/first-steps"
             target="_blank"
           >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">ทดสอบภาษาไทย</div>
+            <h3 className="text-disable text-2xl font-bold">First Steps →</h3>
+            <div className="text-active text-lg">ทดสอบภาษาไทย</div>
           </Link>
           <Link
             className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
             href="https://create.t3.gg/en/introduction"
             target="_blank"
           >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
+            <h3 className="text-purple text-2xl font-bold">Documentation →</h3>
             <div className="text-lg">
               Learn more about Create T3 App, the libraries it uses, and how to
               deploy it.
