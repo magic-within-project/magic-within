@@ -6,7 +6,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--ibm-plex-sans-thai-looped-font)", "sans-serif"],
+      },
+      colors: {
+        default: "#272018",
+        active: "#B78181",
+        disable: "#CBD5E1",
+        purple: "#512C4D",
       },
     },
   },
