@@ -2,5 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+    .word{
+        @apply bg-disable text-purple text-center text-lg p-1.5 rounded-xl hover:bg-active hover:text-white ;
+    }
+    .letter{
+        @apply border border-black animate-pulse hover:ease-out duration-300;
+    }
+    .startletter{
+        @apply bg-transparent
+    }
+}
 

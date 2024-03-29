@@ -14,6 +14,9 @@ export default {
         disable: "#CBD5E1",
         purple: "#512C4D",
       },
+      backgroundImage: {
+        'reframe': "url('/bg_reframe.png')",
+      }
     },
   },
   plugins: [],
