@@ -11,7 +11,7 @@ export default function Page() {
         className="absolute h-full w-full bg-cover bg-no-repeat"
       >
         <motion.div
-          className="absolute right-[4vw] top-[18vh] text-center"
+          className="absolute right-[15px] top-[150px] text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
