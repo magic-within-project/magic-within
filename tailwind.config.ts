@@ -13,6 +13,7 @@ export default {
         active: "#B78181",
         disable: "#CBD5E1",
         purple: "#512C4D",
+        darkPurple: "#341F42",
       },
     },
   },
