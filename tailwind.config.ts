@@ -6,6 +6,7 @@ export default {
     fontFamily: {
       ibmPlex: ["var(--ibm-plex-sans-thai-looped-font)", "sans-serif"],
       charmonman: ["var(--charmonman-font)", "serif"],
+      plaphao: ["var(--plaphao-font)", "sans-serif"],
     },
     extend: {
       colors: {
