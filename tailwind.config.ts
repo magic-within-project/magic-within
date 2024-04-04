@@ -15,6 +15,10 @@ export default {
         purple: "#512C4D",
         darkPurple: "#341F42",
       },
+      backgroundImage: {
+        'white-radial': "url('/img/white-radial.webp')",
+        'magic-stick': "url('/img/magic-stick.png')"
+      }
     },
   },
   plugins: [],
