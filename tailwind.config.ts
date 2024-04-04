@@ -15,6 +15,7 @@ export default {
         purple2: "#512C4D",
         purple3: "#5D5E96",
         purple: "#341F42",
+        mwWhite: "#F8F8F7",
       },
     },
   },
