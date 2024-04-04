@@ -1,34 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { DialogBox } from "~/components/dialog-box";
 
 export default function Page() {
+  const name = localStorage.getItem("name");
   return (
     <>
-      <Link
-        href="/1-5"
-        className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat"
-      >
-        <div className="h-full w-full bg-white opacity-20"></div>
+      <main className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat">
+        <div className="fixed h-full w-full bg-white opacity-20" />
         <motion.div
-          className="absolute top-[250px] w-full text-center"
+          className="absolute top-[200px] w-full text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
-          <div className="absolute top-[-150px] h-[70vh] w-full bg-white-radial opacity-80"></div>
-          <div className="opacity-90">
-            <p>
-              แต่การที่คุณได้มาอยู่ในจุดที่คุณกำลังอยู่ในตอนนี้ <br />
-              ก็เป็นหลักฐานที่ช่วยยืนยันถึง <br />
-              ความพยายามของคุณเช่นเดียวกัน <br /> <br /> <br />
-              ภาพของคืนวันที่คุณต้องอดทนเพียรพยายาม <br />
-              ยังคงกระจ่างชัดในความทรงจำของคุณ <br />
-              เหมือนเป็นเรื่องที่เกิดขึ้นเมื่อวาน <br />
-            </p>
-          </div>
+          <p>มีเสียงเรียกชื่อของคุณดังขึ้น</p>
         </motion.div>
-      </Link>
+        <DialogBox
+          characterName="ฮาร์ท"
+          dialog={`${name ? name : "เพื่อน"}!\nคนเยอะกว่าที่คิดไว้เยอะเลย เห็นแล้วตื่นเต้นขึ้นมาเลยเนอะ`}
+          characterImg="heart"
+          nextPage="/1-6"
+          isCenter={true}
+          height={464}
+        />
+      </main>
     </>
   );
 }

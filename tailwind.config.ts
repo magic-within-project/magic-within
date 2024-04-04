@@ -14,6 +14,7 @@ export default {
         disable: "#CBD5E1",
         purple: "#512C4D",
         darkPurple: "#341F42",
+        "mw-white": "#F8F8F7",
       },
       backgroundImage: {
         "white-radial":
