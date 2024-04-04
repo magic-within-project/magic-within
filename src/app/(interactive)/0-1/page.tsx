@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <Link href="/0-2">
-      <main className="flex min-h-screen flex-col items-center justify-center bg-cover bg-no-repeat text-center">
+      <main className="flex min-h-screen flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4">
           <p>
             เว็บไซต์นี้มีเนื้อหาเกี่ยวกับ

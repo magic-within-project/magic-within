@@ -10,7 +10,7 @@ export default function Page() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-cover bg-no-repeat text-center">
+    <main className="flex min-h-screen flex-col items-center text-center">
       <p className="absolute top-[25vh]">
         ยินดีต้อนรับเข้าสู่การเดินทาง
         <br />

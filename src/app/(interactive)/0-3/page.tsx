@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <Link href="/0-4">
-      <main className="flex min-h-screen flex-col items-center justify-center bg-cover bg-no-repeat text-center">
+      <main className="flex min-h-screen flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-6">
           <div className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             <p className="font-bold text-purple3">

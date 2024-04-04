@@ -17,6 +17,8 @@ export default {
         purple3: "#5D5E96",
         purple: "#341F42",
         mwWhite: "#F8F8F7",
+        yellow: "#FFBA5A",
+        yellow2: "#403A20",
       },
     },
   },
