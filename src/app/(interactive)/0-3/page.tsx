@@ -1,12 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <Link href="/0-4">
       <main className="flex min-h-screen flex-col items-center justify-center bg-cover bg-no-repeat text-center">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <div className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-            <p className="text-purple3 font-bold">
+            <p className="font-bold text-purple3">
               &quot;การเติบโตนำมาซึ่งการเปลี่ยนแปลงเสมอ&quot;
             </p>
             <p>
@@ -17,10 +18,13 @@ export default function Page() {
               การเติบโตของตัวเอง
             </p>
           </div>
-          <div className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-            <p className="text-purple3 font-charmonman text-xl font-bold">
-              Magic Within
-            </p>
+          <div className="flex flex-col items-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <Image
+              src="/img/logo_MW.webp"
+              width={200}
+              height={200}
+              alt="MagicWithin logo"
+            />
             <p>
               Interactive Website ที่จะพาคุณใช้จินตนาการ
               <br />
