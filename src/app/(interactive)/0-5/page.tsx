@@ -1,11 +1,24 @@
 "use client";
 import Link from "next/link";
 import { Slider } from "~/components/slider";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    localStorage.setItem("beforeSelfRate", "1");
+  }, []);
   return (
-    <Link href="/0-6">
-      <main className="flex min-h-screen flex-col items-center text-center text-mwWhite">
+    <main>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+          delay: 1,
+        }}
+        className="flex min-h-screen flex-col items-center text-center text-mwWhite"
+      >
         <p className="absolute top-[18vh]">
           ก่อนจะเริ่มการเดินทาง เราอยากรู้ว่า
         </p>
@@ -25,8 +38,14 @@ export default function Page() {
             step={1}
           />
         </div>
-        <div className="absolute bottom-[14vh]">แตะเพื่อไปต่อ</div>
-      </main>
-    </Link>
+        <div className="absolute bottom-[14vh] w-full">
+          <Link href="/0-6">
+            <button className="bg-yellow h-[4.5vh] w-1/4 rounded-lg font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+              ตกลง
+            </button>
+          </Link>
+        </div>
+      </motion.div>
+    </main>
   );
 }
