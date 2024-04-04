@@ -22,11 +22,13 @@ export default function Page() {
         value={name}
         onChange={(e) => handleName(e.target.value)}
       />
-      <Link href="/0-5" className="absolute bottom-[28vh] w-full">
-        <button className="h-[4.5vh] w-1/4 rounded-lg bg-purple font-semibold text-mwWhite drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
-          ตกลง
-        </button>
-      </Link>
+      <div className="absolute bottom-[28vh] w-full">
+        <Link href="/0-5">
+          <button className="h-[4.5vh] w-1/4 rounded-lg bg-purple font-semibold text-mwWhite drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            ตกลง
+          </button>
+        </Link>
+      </div>
     </main>
   );
 }
