@@ -18,12 +18,12 @@ export default function Page() {
       </p>
       <textarea
         id="name"
-        className="bg-mwWhite absolute right-[14vw] top-[48.5vh] h-[2.5vh] w-[40.67vw] resize-none overflow-hidden pl-1 pt-0.5 text-sm"
+        className="absolute right-[14%] top-[48.5vh] h-[2.5vh] w-[40.67%] resize-none overflow-hidden bg-mwWhite pl-1 pt-1 text-sm"
         value={name}
         onChange={(e) => handleName(e.target.value)}
       />
-      <Link href="/0-5" className="absolute bottom-[28vh]">
-        <button className="text-mwWhite h-[4.5vh] w-[22vw] rounded-lg bg-purple font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+      <Link href="/0-5" className="absolute bottom-[28vh] w-full">
+        <button className="h-[4.5vh] w-1/4 rounded-lg bg-purple font-semibold text-mwWhite drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
           ตกลง
         </button>
       </Link>
