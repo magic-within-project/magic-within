@@ -1,9 +1,15 @@
 import Link from "next/link";
+
 import { redirect } from "next/navigation";
 
+//import Pane from "~/app/scene4-4/Pane";
+//import page from "~/app/(interactive)/4-5/page"
+
+
 export default function HomePage() {
-  redirect("/0");
+  redirect("/4-1");
   return (
+    <>
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
@@ -32,5 +38,8 @@ export default function HomePage() {
         </div>
       </div>
     </main>
+    <div className="font-ibmPlex h-screen  bg-origin-border bg-gradient-to-r from-purple to-indigo-900 bg-cover bg-center ">
+    </div>
+    </>
   );
 }
