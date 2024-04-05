@@ -12,7 +12,7 @@ export default function Pane() {
 
     return(
         <Link href="/4-7">
-        <div className="w-1024 h-screen bg-scene4-reframe2"  >
+        <div className="w-1024 h-screen"  >
             <motion.div
             initial={{opacity : 0}}
             animate={{opacity : 1 ,transition : {duration : 3}}}

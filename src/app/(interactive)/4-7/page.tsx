@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { StartupSnapshot } from "v8";
 
 
 export default function Page(){
