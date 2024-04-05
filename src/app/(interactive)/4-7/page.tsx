@@ -31,7 +31,7 @@ export default function Page(){
             //transiton={{duration:3,delay:7}}
             className="grid justify-items-center"
         >
-        <textarea className="mt-4 w-5/6 h-56 rounded-lg text-left inline-block align-text-top p-4 text-wrap " 
+        <textarea className="mt-4 w-5/6 h-56 rounded-lg text-left inline-block align-text-top p-4 text-wrap drop-shadow-md" 
          placeholder= "โปรดพิมพ์คำตอบของคุณ" 
          required = {true} maxLength={180} onChange={(e)=>setChar(e.target.value)}></textarea>                    
           </motion.div>
