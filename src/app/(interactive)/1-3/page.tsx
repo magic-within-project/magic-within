@@ -15,8 +15,8 @@ export default function Page() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
-          <div className="bg-white-radial absolute top-[-150px] h-[70vh] w-full opacity-80"></div>
-          <div className="opacity-90">
+          <div className="absolute top-[-150px] h-[70vh] w-full bg-white-radial opacity-80" />
+          <div className="opacity-95">
             <p>
               พอรู้เช่นนั้นแล้ว <br />
               ทำให้คุณอดคิดขึ้นไม่ได้ว่าตัวคุณที่กำลังเข้าร่วม <br />

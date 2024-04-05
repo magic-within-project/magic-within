@@ -15,9 +15,9 @@ export default function Page() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
-          <div className="bg-white-radial absolute top-[-150px] h-[70vh] w-full opacity-80"></div>
-          <div className="opacity-90">
-            <h2 className="font-charmonman text-darkPurple mb-5 text-2xl font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+          <div className="absolute top-[-150px] h-[70vh] w-full bg-white-radial opacity-80" />
+          <div className="opacity-95">
+            <h2 className="mb-5 font-charmonman text-2xl font-bold text-darkPurple drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               Magic Academy
             </h2>
             <p>
