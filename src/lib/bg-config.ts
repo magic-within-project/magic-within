@@ -6,5 +6,9 @@ export const backgroundMapConfig = {
   "6-4": {
     image: "/bg/bg6-4.webp",
     imagePreload: [],
-  }
+  },
+  "6-5": {
+    image: "/bg/bg6-4.webp",
+    imagePreload: [],
+  },
 } as const;
