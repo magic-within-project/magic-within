@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import Next from "./next";
 
 
 export default function Page(){
@@ -30,7 +31,7 @@ export default function Page(){
             //transiton={{duration:3,delay:7}}
             className="grid justify-items-center"
         >
-        <textarea className="mt-4 w-9/12 h-40 rounded-lg text-left inline-block align-text-top p-3 text-wrap " 
+        <textarea className="mt-4 w-5/6 h-56 rounded-lg text-left inline-block align-text-top p-3 text-wrap " 
          placeholder= "โปรดพิมพ์คำตอบของคุณ" 
          required = {true} maxLength={180} onChange={(e)=>setChar(e.target.value)}></textarea>                    
           </motion.div>
@@ -41,7 +42,7 @@ export default function Page(){
             className="grid justify-items-center"
         >
             
-         <button className="h-10 w-24 mt-48 bg-darkPurple text-white text-center text-lg  p-1.5 rounded-lg hover:bg-active hover:text-white" type ="submit" onClick={handleReframe}> ยืนยัน </button>
+         <Next char={char} handleReframe={handleReframe}/>
          
          </motion.div>
          
