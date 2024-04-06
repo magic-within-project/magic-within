@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useState } from "react";
@@ -8,7 +8,7 @@ export default function Page() {
   const [currentButton, setCurrentButton] = useState("เริ่ม");
   const [isAnimationStopped, setIsAnimationStopped] = useState(true);
   const [currentPosition, setCurrentPosition] = useState(0);
-  const [backgroundImage, setBackgroundImage] = useState("")
+  const [backgroundImage, setBackgroundImage] = useState("");
   const barWidth = 320;
 
   const moveDivAnimation = keyframes`
@@ -28,14 +28,14 @@ export default function Page() {
     transform: translateY(-25%);
     left: ${currentPosition}px;
   `;
-  
-  const router = useRouter()
+
+  const router = useRouter();
 
   function handleSubmit() {
-    if(currentButton == "ลองใหม่") {
-      window.location.reload()
+    if (currentButton == "ลองใหม่") {
+      window.location.reload();
     } else if (currentButton == "ต่อไป") {
-      router.push('/2-1')
+      router.push("/2-11");
     }
     setIsAnimationStopped(!isAnimationStopped);
     if (isAnimationStopped) {
@@ -45,12 +45,18 @@ export default function Page() {
     setCurrentPosition(position);
     const redDiv: any = document.getElementById("red");
     const redDivRect = redDiv.getBoundingClientRect();
-    const origin = document.getElementById("arrow-game-bar")?.getBoundingClientRect()?.left ?? 0;
-    if (position + origin >= redDivRect.left && position + origin <= redDivRect.right) {
-      setBackgroundImage("/img/perfect.webp")
+    const origin =
+      document.getElementById("arrow-game-bar")?.getBoundingClientRect()
+        ?.left ?? 0;
+
+    if (
+      position + origin >= redDivRect.left &&
+      position + origin <= redDivRect.right
+    ) {
+      setBackgroundImage("/img/perfect.webp");
       setCurrentButton("ต่อไป");
     } else {
-      setBackgroundImage("/img/try-again.webp")
+      setBackgroundImage("/img/try-again.webp");
       setCurrentButton("ลองใหม่");
     }
   }
@@ -67,10 +73,18 @@ export default function Page() {
     default: "rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white",
     otherState: "rounded-lg bg-[#512C4D] pb-2 pl-5 pr-5 pt-2 text-white",
   };
-  let buttonClassName = currentButton === "เริ่ม" ? buttonClasses.default : buttonClasses.otherState;
+  let buttonClassName =
+    currentButton === "เริ่ม"
+      ? buttonClasses.default
+      : buttonClasses.otherState;
   return (
-    <div className="absolute flex h-[100dvh] w-full flex-col items-center justify-center"
-    style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+    <div
+      className="absolute flex h-[100dvh] w-full flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="mt-20 flex items-center justify-center text-center text-white">
         <p>
@@ -84,7 +98,10 @@ export default function Page() {
             className="relative h-5 rounded-xl border-2 border-white bg-[#D3D5EC]"
             style={{ width: barWidth }}
           >
-            <div id="arrow-game-bar" className="absolute inset-y-0 left-0 right-0 flex items-center justify-center">
+            <div
+              id="arrow-game-bar"
+              className="absolute inset-y-0 left-0 right-0 flex items-center justify-center"
+            >
               <div
                 id="red"
                 className="h-full w-[79px] rounded-xl bg-[#D60000]"
@@ -96,11 +113,7 @@ export default function Page() {
             ></AnimatedDiv>
           </div>
           <div className="mt-10 flex items-center justify-center">
-            <button
-              onClick={() => handleSubmit()}
-              className={buttonClassName}
-              //className="rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white"
-            >
+            <button onClick={() => handleSubmit()} className={buttonClassName}>
               {currentButton}
             </button>
           </div>
