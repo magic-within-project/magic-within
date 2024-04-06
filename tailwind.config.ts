@@ -17,7 +17,8 @@ export default {
       },
       backgroundImage: {
         'white-radial': "url('/img/white-radial.webp')",
-        'magic-stick': "url('/img/magic-stick.png')"
+        'magic-stick': "url('/img/magic-stick.png')",
+        'perfect': "url('/img/perfect.webp')"
       }
     },
   },

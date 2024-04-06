@@ -1,4 +1,5 @@
 'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useState } from "react";
 import styled, { css, keyframes } from "styled-components";
@@ -7,6 +8,7 @@ export default function Page() {
   const [currentButton, setCurrentButton] = useState("เริ่ม");
   const [isAnimationStopped, setIsAnimationStopped] = useState(true);
   const [currentPosition, setCurrentPosition] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState("")
   const barWidth = 320;
 
   const moveDivAnimation = keyframes`
@@ -26,23 +28,31 @@ export default function Page() {
     transform: translateY(-25%);
     left: ${currentPosition}px;
   `;
+  
+  const router = useRouter()
 
   function handleSubmit() {
+    if(currentButton == "ลองใหม่") {
+      window.location.reload()
+    } else if (currentButton == "ต่อไป") {
+      router.push('/2-1')
+    }
     setIsAnimationStopped(!isAnimationStopped);
     if (isAnimationStopped) {
-      setCurrentButton("หยุด");
       return;
     }
-    setCurrentButton("เริ่ม")
-    
     const position = getCurrentPosition();
     setCurrentPosition(position);
     const redDiv: any = document.getElementById("red");
     const redDivRect = redDiv.getBoundingClientRect();
     const origin = document.getElementById("arrow-game-bar")?.getBoundingClientRect()?.left ?? 0;
     if (position + origin >= redDivRect.left && position + origin <= redDivRect.right) {
-      alert("congrats!");
-    } else alert("skill issue")
+      setBackgroundImage("/img/perfect.webp")
+      setCurrentButton("ต่อไป");
+    } else {
+      setBackgroundImage("/img/try-again.webp")
+      setCurrentButton("ลองใหม่");
+    }
   }
 
   function getCurrentPosition() {
@@ -53,11 +63,16 @@ export default function Page() {
     }
     return 0;
   }
-
+  const buttonClasses = {
+    default: "rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white",
+    otherState: "rounded-lg bg-[#512C4D] pb-2 pl-5 pr-5 pt-2 text-white",
+  };
+  let buttonClassName = currentButton === "เริ่ม" ? buttonClasses.default : buttonClasses.otherState;
   return (
-    <div>
-      <div className="h-[100px]"></div>
-      <div className="flex items-center justify-center text-center text-white">
+    <div className="absolute flex h-[100dvh] w-full flex-col items-center justify-center"
+    style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+    >
+      <div className="mt-20 flex items-center justify-center text-center text-white">
         <p>
           LEVEL
           <br />1 / 3
@@ -83,7 +98,8 @@ export default function Page() {
           <div className="mt-10 flex items-center justify-center">
             <button
               onClick={() => handleSubmit()}
-              className="rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white"
+              className={buttonClassName}
+              //className="rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white"
             >
               {currentButton}
             </button>
