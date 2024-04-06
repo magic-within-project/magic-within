@@ -9,11 +9,11 @@ export default function Page() {
     <>
       <Link
         href="/1-7"
-        className="absolute h-full w-full bg-cover bg-no-repeat"
+        className="absolute h-full w-full overflow-hidden bg-cover bg-no-repeat"
       >
         <div className="fixed h-full w-full bg-white opacity-20" />
         <motion.div
-          className="absolute right-[15px] top-[150px] text-center"
+          className="absolute right-[25px] top-[150px] text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
@@ -33,7 +33,14 @@ export default function Page() {
             alt="heart"
             width={407 / 2}
             height={407}
-            className={`absolute top-8 z-0 mx-10 ml-auto mr-auto`}
+            className={`fixed bottom-[160px] left-1/2 z-0 -translate-x-1/2 transform`}
+          />
+          <Image
+            src={"/heart-introduction.webp"}
+            alt="name"
+            width={283}
+            height={283}
+            className={`fixed bottom-0 left-1/2 z-0 -translate-x-1/2 transform`}
           />
         </motion.div>
       </Link>
