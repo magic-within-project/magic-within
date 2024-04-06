@@ -1,33 +1,20 @@
 "use client";
-import { motion } from "framer-motion";
-import Link from "next/link";
 
+import { motion } from "framer-motion";
+import { DialogBox } from "~/components/dialog-box";
 export default function Page() {
   return (
-    <Link href="/2-5">
-      <div className="absolute flex h-[100dvh] w-full flex-col items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
-          className="absolute inset-x-0 top-[20%] p-10"
-        >
-          <p className="text-center text-white">
-            คำพูดหยอกล้อของครู
-            <br />
-            กลับทำให้คุณเริ่มรู้สึกกดดันขึ้นมา
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            z: 10,
-            transition: { duration: 1, delay: 2.5 },
-          }}
-          className="absolute top-[80%]"
-        ></motion.div>
-      </div>
-      </Link>
+    <>
+      <main className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat">
+        <DialogBox
+          characterName="อาจารย์"
+          dialog={`เพราะงั้นเดี๋ยวเราลองมาวัดระดับกันสักหน่อยดีกว่า จะได้รู้ว่าแต่ละคนเก่งสมกับที่ได้มาอยู่โรงเรียนนี้จริง ๆ หรือเปล่า ฮ่า ๆ`}
+          characterImg="teacher"
+          nextPage="2-5"
+          isCenter={false}
+          height={464}
+        />
+      </main>
+    </>
   );
 }

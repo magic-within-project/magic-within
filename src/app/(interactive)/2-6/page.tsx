@@ -12,22 +12,12 @@ export default function Page() {
           className="absolute inset-x-0 top-[20%] p-10"
         >
           <p className="text-center text-white">
-          "สิ่งสำคัญสำหรับการยิงเวทมนตร์
-          <br/>
-          คือความมั่นคงและความแม่นยำ"
+            คำพูดหยอกล้อของครู
+            <br />
+            กลับทำให้คุณเริ่มรู้สึกกดดันขึ้นมา
           </p>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            z: 10,
-            transition: { duration: 1, delay: 2.5 },
-          }}
-          className="absolute top-[80%]"
-        ></motion.div>
       </div>
-      </Link>
+    </Link>
   );
 }

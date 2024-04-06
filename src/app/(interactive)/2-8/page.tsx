@@ -1,18 +1,23 @@
-"use client"
+"use client";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-import React from 'react'
-import GameBar from '~/components/GameBar'
-export default function page() {
+export default function Page() {
   return (
-    <div>
-        <div className='h-[100px]'></div>
-        <div className="text-white flex items-center text-center justify-center">
-            <p>LEVEL<br/>1/3</p>
-        </div>
-        <div className='flex justify-center mt-[480px]'>
-            <GameBar/>
-        </div>
-
-    </div>
-  )
+    <Link href="/2-9">
+      <div className="absolute flex h-[100dvh] w-full flex-col items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          className="absolute inset-x-0 top-[20%] p-10"
+        >
+          <p className="text-center text-white">
+            "สิ่งสำคัญสำหรับการยิงเวทมนตร์
+            <br />
+            คือความมั่นคงและความแม่นยำ"
+          </p>
+        </motion.div>
+      </div>
+    </Link>
+  );
 }

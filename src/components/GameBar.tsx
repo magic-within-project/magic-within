@@ -8,24 +8,26 @@ export default function GameBar() {
     0% { left: 0px; top: 0px; }
     100% { left: ${barWidth}px; top: 0px; }
   `;
-  
   const AnimatedDiv = styled.div`
     width: 4px;
     height: 200%;
     background-color: #FFBA5A;
-    // background-image: url('/img/magic-stick.png');
-    // background-size: cover;
     animation: ${moveDivAnimation} 1s linear infinite alternate;
-    transform: translateY(-25%)
+    transform: translateY(-25%);
   `;
 
   return (
-    <div className="relative h-8 bg-gray-200" style={{ width: barWidth }}>
-      <div className='absolute inset-y-0 left-0 right-0 flex justify-center items-center'>
-        <div className='bg-[#D60000] w-[97px] h-8'></div>
+    <div>
+    <div className="relative h-5 rounded-xl bg-[#D3D5EC] border-2 border-white" style={{ width: barWidth }}>
+        <div className='absolute inset-y-0 left-0 right-0 flex justify-center items-center'>
+          <div id="red" className='bg-[#D60000] w-[97px] h-full rounded-xl'></div>
+        </div>
+        <AnimatedDiv className="absolute top-0 left-0"></AnimatedDiv>
       </div>
-      <AnimatedDiv className="absolute top-0 left-0"></AnimatedDiv>
-      <button onClick={() => {}}></button>
+      <div className='flex justify-center items-center mt-6'>
+      <button onClick={() => {}} className='rounded-lg bg-[#FF9F19] text-white pl-5 pr-5 pt-2 pb-2'>หยุด</button>
+      </div>
     </div>
   );
 }
+

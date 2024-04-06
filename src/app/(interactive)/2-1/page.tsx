@@ -18,16 +18,6 @@ export default function Page() {
             ที่ใช้เวลาช่วงเช้าทั้งหมด
           </p>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            z: 10,
-            transition: { duration: 1, delay: 2.5 },
-          }}
-          className="absolute top-[80%]"
-        ></motion.div>
       </div>
     </Link>
   );
