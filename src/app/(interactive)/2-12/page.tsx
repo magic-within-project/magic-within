@@ -35,7 +35,7 @@ export default function Page() {
     if (currentButton == "ลองใหม่") {
       window.location.reload();
     } else if (currentButton == "ต่อไป") {
-      router.push("/2-12");
+      router.push("/2-13");
     }
     setIsAnimationStopped(!isAnimationStopped);
     if (isAnimationStopped) {

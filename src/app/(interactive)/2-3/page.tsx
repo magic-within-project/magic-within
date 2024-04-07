@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { DialogBox } from "~/components/dialog-box";
 export default function Page() {
   return (
