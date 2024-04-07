@@ -9,7 +9,9 @@ export default function Page() {
         <div className="fixed h-full w-full bg-white opacity-20" />
         <DialogBox
           characterName="ฮาร์ท"
-          dialog={"แต่ว่า ..\nเราก็ยังรู้สึกไม่มั่นใจมากเท่าไหร่อยู่ดี"}
+          dialog={
+            "ในที่ ๆ เต็มไปด้วยคนเก่ง ๆ\nเยอะแยะไปหมด\nแกว่าเราจะสู้คนอื่นเขาได้จริง ๆ หรอ?"
+          }
           characterImg="heart"
           nextPage={"/5-5"}
           height={535}
