@@ -15,7 +15,7 @@ export default function Page() {
           }}
           className="h-full w-full"
         >
-          <div className="fixed  h-full w-full bg-white" />
+          <div className="bg-lightYellow  fixed h-full w-full" />
         </motion.div>
       </main>
     </Link>

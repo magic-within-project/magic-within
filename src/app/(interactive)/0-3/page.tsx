@@ -16,7 +16,7 @@ export default function Page() {
           }}
           className="flex min-h-screen flex-col items-center justify-center text-center"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
             <div className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               <p className="font-bold text-purple3">
                 &quot;การเติบโตนำมาซึ่งการเปลี่ยนแปลงเสมอ&quot;
@@ -31,11 +31,13 @@ export default function Page() {
             </div>
             <div className="flex flex-col items-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               <Image
-                src="/img/logo_MW.webp"
-                width={200}
-                height={200}
+                src="/img/logo_MW2lines.webp"
+                width={150}
+                height={150}
                 alt="MagicWithin logo"
               />
+            </div>
+            <div>
               <p>
                 Interactive Website ที่จะพาคุณใช้จินตนาการ
                 <br />

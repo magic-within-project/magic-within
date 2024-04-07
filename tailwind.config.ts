@@ -19,7 +19,11 @@ export default {
         mwWhite: "#F8F8F7",
         yellow: "#FFBA5A",
         yellow2: "#403A20",
+        lightYellow: "#FFFDC9",
       },
+    },
+    backgroundImage: {
+      "0-0": "url('/bg/0-0.webp')",
     },
   },
   plugins: [],
