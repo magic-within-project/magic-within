@@ -4,17 +4,18 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <Link href="/2-2">
+    <Link href="/3-1">
       <div className="absolute flex h-[100dvh] w-full flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
-          className="absolute inset-x-0 top-[20%] bg-white-radial bg-center bg-no-repeat p-10"
+          className="absolute inset-x-0 top-[30%] p-10"
         >
-          <p className="text-center">
-            หลังจากพิธีปฐมนิเทศ
+          <p className="text-center text-white">
+            คุณสังเกตเห็นว่า
             <br />
-            ที่ใช้เวลาช่วงเช้าทั้งหมด
+            ฮาร์ทรีบเดินออกไปทันทีที่อาจารย์พูดจบ<br />
+            คุณรู้สึกเป็นห่วงจึงรีบตามไป
           </p>
         </motion.div>
       </div>
