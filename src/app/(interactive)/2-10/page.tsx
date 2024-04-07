@@ -32,6 +32,7 @@ export default function Page() {
   const router = useRouter();
 
   function handleSubmit() {
+    if (currentButton == "เริ่ม") setCurrentButton("หยุด");
     if (currentButton == "ลองใหม่") {
       window.location.reload();
     } else if (currentButton == "ต่อไป") {
@@ -74,7 +75,7 @@ export default function Page() {
     otherState: "rounded-lg bg-[#512C4D] pb-2 pl-5 pr-5 pt-2 text-white",
   };
   let buttonClassName =
-    currentButton === "เริ่ม"
+    currentButton === "เริ่ม" || currentButton === "หยุด"
       ? buttonClasses.default
       : buttonClasses.otherState;
   return (
