@@ -14,13 +14,18 @@ const InteractiveBackground = () => {
   useEffect(() => {
     switch (page) {
       default:
-        setBgImgSrc(backgroundMapConfig[page].image);
+        setBgImgSrc(
+          backgroundMapConfig[page]
+            ? backgroundMapConfig[page].image
+            : undefined,
+        );
         break;
     }
   }, [page, router]);
 
   const imagePreloadSrc = useMemo(() => {
-    const imagePreloadSrc = backgroundMapConfig[page].imagePreload;
+    if (!backgroundMapConfig[page]) return [] as [];
+    const imagePreloadSrc = backgroundMapConfig[page].imagePreload || [];
     return imagePreloadSrc;
   }, [page]);
 

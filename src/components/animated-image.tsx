@@ -8,7 +8,9 @@ import { useEffect, useState } from "react";
 
 interface AnimatedImageProps extends ImageProps {
   src: string;
-  preloadSrcs: (typeof backgroundMapConfig)[keyof typeof backgroundMapConfig]["imagePreload"];
+  preloadSrcs:
+    | (typeof backgroundMapConfig)[keyof typeof backgroundMapConfig]["imagePreload"]
+    | [];
 }
 
 const AnimatedImage = ({
@@ -53,21 +55,20 @@ const AnimatedImage = ({
           <Image src={currentSrc} alt={alt} {...props} />
         </motion.div>
       </AnimatePresence>
-      {preloadSrcs &&
-        preloadSrcs.map((src) => (
-          <Image
-            key={`preload-${src}`}
-            src={src}
-            alt={`preload-${alt}`}
-            loading="eager"
-            priority={true}
-            {...props}
-            className="hidden"
-            onLoad={() => {
-              console.log(`preloaded image: ${src}`);
-            }}
-          />
-        ))}
+      {preloadSrcs.map((src) => (
+        <Image
+          key={`preload-${src}`}
+          src={src}
+          alt={`preload-${alt}`}
+          loading="eager"
+          priority={true}
+          {...props}
+          className="hidden"
+          onLoad={() => {
+            console.log(`preloaded image: ${src}`);
+          }}
+        />
+      ))}
     </>
   );
 };
