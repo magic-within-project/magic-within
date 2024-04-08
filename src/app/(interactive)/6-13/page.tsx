@@ -7,7 +7,7 @@ export default function page() {
 
     return(
         
-            <Link href="/6-8">
+            <Link href="/6-14">
             <div className="h-screen w-1024"> 
             <motion.div
             initial={{opacity:0}}

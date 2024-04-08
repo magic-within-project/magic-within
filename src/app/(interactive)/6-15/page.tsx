@@ -17,8 +17,8 @@ export default function page() {
             animate={{opacity:1,transition:{duration:3}}}
             className = "">
                 <div className="grid justiy-items-center">
-                <h1 className="mt-10 w-80  text-white font-plaphao justify-self-center content-center text-wrap ">'{doubtYourselfFeeling}'</h1>
-                <h1 className="my-8 justify-self-center font-plaphao text-white">แต่...</h1>
+                <h1 className="mt-10 w-80 h-48 text-white font-plaphao justify-self-center content-center text-wrap ">'{doubtYourselfFeeling}'</h1>
+                <h1 className=" my-8 justify-self-center font-plaphao text-white">แต่...</h1>
                 <textarea placeholder="โปรดพิมพ์คำตอบของคุณ" className="p-5 w-5/6 justify-self-center h-48 rounded-lg drop-shadow-md" 
                 onChange={(e) => setChar(e.target.value) } maxLength={190}></textarea>
                 <div className="justify-self-center">

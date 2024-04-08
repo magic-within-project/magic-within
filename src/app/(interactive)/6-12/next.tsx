@@ -7,7 +7,7 @@ export default function next({char,handleClick}:Prop){
     if(char !== ""){
        return (
        <button className="h-10 w-24 mt-36 bg-darkPurple text-white text-center text-lg  p-1.5 rounded-lg hover:bg-active hover:text-white" type ="submit" onClick={handleClick}> 
-       <Link href="/6-7">
+       <Link href="/6-13">
     ยืนยัน
     </Link>
      </button>

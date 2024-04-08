@@ -15,7 +15,7 @@ export default function page(){
     
 
     return(
-        <Link href="/6-9">
+        <Link href="/6-15">
         <div className="h-screen text-center">
             <motion.div
             initial={{opacity:0}}
