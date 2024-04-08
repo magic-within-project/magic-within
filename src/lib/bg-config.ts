@@ -49,47 +49,47 @@ export const backgroundMapConfig = {
   },
   "5-1": {
     image: "/bg/3-1.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/3-3.webp"],
   },
   "5-2": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-3": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-4": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-5": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-6": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-7": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-8": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-9": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-10": {
-    image: "/bg/3-1.webp",
+    image: "/bg/3-3.webp",
     imagePreload: [],
   },
   "5-11": {
-    image: "/bg/3-1.webp",
-    imagePreload: [],
+    image: "/bg/3-3.webp",
+    imagePreload: ["/bg/3-1.webp"],
   },
   "5-12": {
     image: "/bg/3-1.webp",
