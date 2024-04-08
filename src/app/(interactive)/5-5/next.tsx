@@ -10,7 +10,7 @@ export default function next({ char, handleClick }: Prop) {
         type="submit"
         onClick={handleClick}
       >
-        <Link href="/6-5">ยืนยัน</Link>
+        <Link href="/5-6">ยืนยัน</Link>
       </button>
     );
   } else {
