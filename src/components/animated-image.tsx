@@ -53,20 +53,21 @@ const AnimatedImage = ({
           <Image src={currentSrc} alt={alt} {...props} />
         </motion.div>
       </AnimatePresence>
-      {preloadSrcs.map((src) => (
-        <Image
-          key={`preload-${src}`}
-          src={src}
-          alt={`preload-${alt}`}
-          loading="eager"
-          priority={true}
-          {...props}
-          className="hidden"
-          onLoad={() => {
-            console.log(`preloaded image: ${src}`);
-          }}
-        />
-      ))}
+      {preloadSrcs &&
+        preloadSrcs.map((src) => (
+          <Image
+            key={`preload-${src}`}
+            src={src}
+            alt={`preload-${alt}`}
+            loading="eager"
+            priority={true}
+            {...props}
+            className="hidden"
+            onLoad={() => {
+              console.log(`preloaded image: ${src}`);
+            }}
+          />
+        ))}
     </>
   );
 };
