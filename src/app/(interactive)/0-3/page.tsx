@@ -24,12 +24,12 @@ export default function Page() {
               <p>
                 อาจมีทั้งเรื่องดีและไม่ดี
                 <br />
-                และไม่แปลกที่คุณจะตั้งคำถามกับ
+                และไม่แปลกที่คุณจะตั้งคำถาม
                 <br />
-                การเติบโตของตัวเอง
+                กับการเติบโตของตัวเอง
               </p>
             </div>
-            <div className="flex flex-col items-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <div className="flex flex-col items-center">
               <Image
                 src="/img/logo_MW2lines.webp"
                 width={150}
@@ -37,7 +37,7 @@ export default function Page() {
                 alt="MagicWithin logo"
               />
             </div>
-            <div>
+            <div className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               <p>
                 Interactive Website ที่จะพาคุณใช้จินตนาการ
                 <br />
