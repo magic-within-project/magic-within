@@ -6,7 +6,6 @@ export default function Page() {
   return (
     <Link href="/3-10">
       <main className="min-h-screen">
-        <div className="fixed -z-10 h-full w-full bg-black opacity-30" />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -16,6 +15,7 @@ export default function Page() {
           }}
           className="flex min-h-screen flex-col items-center text-center text-white"
         >
+          <div className="fixed -z-10 h-full w-full bg-black opacity-30" />
           <p className="absolute top-[20vh] leading-7">
             ความกังวลที่ฮาร์ทกักเก็บเอาไว้
             <br />
