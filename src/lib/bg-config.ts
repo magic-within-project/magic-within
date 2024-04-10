@@ -33,6 +33,42 @@ export const backgroundMapConfig = {
   },
   "6-17": {
     image: "/bg/bg6-17.webp",
+    imagePreload: ["/bg/bg6-18.webp"],
+  },
+  "6-18": {
+    image: "/bg/bg6-18.webp",
+    imagePreload: ["/bg/bg6-18-1.webp","/bg/bg6-18-2.webp"],
+    
+  },
+  "6-19": {
+    image: ["/bg/bg6-19-1.webp","/bg/bg6-19-2.webp"],
+    stopMotionDuration: 2000,
+    imagePreload: ["/bg/bg6-20.webp"],
+    
+  },
+  "6-20": {
+    image: "/bg/bg6-20.webp",
     imagePreload: [],
+    
+  },
+  "6-21": {
+    image: "/bg/bg6-20.webp",
+    imagePreload: [],
+    
+  },
+  "6-22": {
+    image: "/bg/bg6-20.webp",
+    imagePreload: ["/bg/bg6-23.webp"],
+    
+  },
+  "6-23": {
+    image: "/bg/bg6-23.webp",
+    imagePreload: [],
+    
+  },
+  "6-24": {
+    image: "/bg/bg6-23.webp",
+    imagePreload: [],
+    
   },
 } as const;

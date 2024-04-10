@@ -15,6 +15,7 @@ export default {
         disable: "#CBD5E1",
         purple: "#512C4D",
         darkPurple: "#341F42",
+        brown :"#74564A",
       },
     },
   },

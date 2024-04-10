@@ -31,7 +31,7 @@ export default function page() {
                             </Link>
                             </button>
                         <button className="bg-white w-24 h-10 rounded-lg text-default text-lg drop-shadow-md" onClick={No}>
-                            <Link href="/6-">
+                            <Link href="/6-25">
                             ไม่ใช่
                             </Link>
                             </button>                        
