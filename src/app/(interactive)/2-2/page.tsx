@@ -10,7 +10,7 @@ export default function Page() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
-          className="absolute inset-x-0 top-[20%] bg-white-radial bg-center bg-no-repeat p-10"
+          className="bg-img-white-radial absolute inset-x-0 top-[20%] bg-center bg-no-repeat p-10"
         >
           <p className="text-center">
             ตอนนี้คาบเรียนแรกของคุณ
