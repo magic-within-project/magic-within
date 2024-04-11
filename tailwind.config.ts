@@ -20,6 +20,12 @@ export default {
         yellow: "#FFBA5A",
         yellow2: "#403A20",
         lightYellow: "#FFFDC9",
+        darkPurple: "#341F42",
+        "mw-white": "#F8F8F7",
+      },
+      backgroundImage: {
+        "white-radial":
+          "radial-gradient(51% 42.5% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.78) 36.4%, rgba(255, 255, 255, 0.84) 59.9%, rgba(255, 255, 255, 0.56) 76.9%, rgba(255, 255, 255, 0) 100%)",
       },
     },
     backgroundImage: {

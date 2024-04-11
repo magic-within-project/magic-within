@@ -1,0 +1,30 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { DialogBox } from "~/components/dialog-box";
+
+export default function Page() {
+  const name = localStorage.getItem("name");
+  return (
+    <>
+      <main className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat">
+        <div className="fixed h-full w-full bg-white opacity-20" />
+        <motion.div
+          className="absolute top-[200px] w-full text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+        >
+          <p>มีเสียงเรียกชื่อของคุณดังขึ้น</p>
+        </motion.div>
+        <DialogBox
+          characterName="ฮาร์ท"
+          dialog={`${name ? name : "เพื่อน"}!\nคนเยอะกว่าที่คิดไว้เยอะเลย เห็นแล้วตื่นเต้นขึ้นมาเลยเนอะ`}
+          characterImg="heart"
+          nextPage="/1-6"
+          isCenter={true}
+          height={464}
+        />
+      </main>
+    </>
+  );
+}
