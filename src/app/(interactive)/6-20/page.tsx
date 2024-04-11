@@ -32,7 +32,7 @@ export default function page() {
           
             <motion.div
                 initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration:2}}}
+                animate={{opacity:1,transition:{duration:1,delay:1}}}
             >
               <div className="absolute top-5 grid justify-items-center w-[252px] mx-24">
               <div style={{ fontSize: `${len}rem` }} className="mt-[102px] justify-self-center text-center content-center font-size:30% text-wrap text-brown drop-shadow ">

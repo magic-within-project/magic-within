@@ -109,7 +109,7 @@ export default function page() {
         <div>
             <motion.div
                 initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration:2}}}
+                animate={{opacity:1,transition:{duration:1}}}
             >
             
           <div className="z-10 h-screen w-full bg-[url(/bg/bg6-23.webp)] bg-[length:450px_900px] bg-center" id="exportedWords"  >

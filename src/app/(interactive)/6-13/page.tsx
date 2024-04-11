@@ -11,7 +11,7 @@ export default function page() {
             <div className="h-screen w-1024"> 
             <motion.div
             initial={{opacity:0}}
-            animate={{opacity:1,transition:{duration:3}}}
+            animate={{opacity:1,transition:{duration:1,delay:1}}}
             >
         <div className="grid justify-items-center">
             

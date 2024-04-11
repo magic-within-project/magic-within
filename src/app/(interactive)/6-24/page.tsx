@@ -45,7 +45,7 @@ export default function page() {
         </div>
         <motion.div
                 initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration:2}}}
+                animate={{opacity:1,transition:{duration:1}}}
             >
         <div className="grid h-screen w-full bg-black opacity-60"></div>
             

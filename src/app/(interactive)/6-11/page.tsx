@@ -19,7 +19,7 @@ export default function page() {
         <div>
             <motion.div
                 initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration:3}}}
+                animate={{opacity:1,transition:{duration:1,delay:1}}}
             >
                 <div className="grid justify-items-center">
                     <h1 className="mt-64 text-white">เรื่องที่คุณกำลังตั้งคำถามกับตัวเอง</h1>

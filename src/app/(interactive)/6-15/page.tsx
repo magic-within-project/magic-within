@@ -33,8 +33,7 @@ export default function page() {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          z: 10,
-          transition: { duration: 1, delay: 2.5 },
+          transition: { duration:1,delay:1},
         }}
         className="absolute top-[80%]"
       ></motion.div>
