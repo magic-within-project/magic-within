@@ -26,10 +26,11 @@ export default {
       backgroundImage: {
         "white-radial":
           "radial-gradient(51% 42.5% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.78) 36.4%, rgba(255, 255, 255, 0.84) 59.9%, rgba(255, 255, 255, 0.56) 76.9%, rgba(255, 255, 255, 0) 100%)",
+        "0-0": "url('/bg/0-0.webp')",
+        "img-white-radial": "url('/img/white-radial.webp')",
+        "magic-stick": "url('/img/magic-stick.png')",
+        perfect: "url('/img/perfect.webp')",
       },
-    },
-    backgroundImage: {
-      "0-0": "url('/bg/0-0.webp')",
     },
   },
   plugins: [],
