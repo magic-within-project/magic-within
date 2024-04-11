@@ -30,7 +30,7 @@ export default function Page() {
           className="flex min-h-screen flex-col items-center text-center text-mwWhite"
         ></motion.div>
         <Link
-          href="https://forms.gle/2uaAHhvqwMTPKrvb8"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf6OBtgbmHsEq9eWisZ0WGM-4XXlegjH-jSe9SWN-tPiGCwsw/viewform"
           className="absolute top-[45vh] flex w-full justify-center"
         >
           <button className="bg-whiteButton flex h-12 w-2/3 items-center justify-center rounded-[10px] pt-1 drop-shadow-[0_2px_1px_rgba(0,0,0,0.05)]">

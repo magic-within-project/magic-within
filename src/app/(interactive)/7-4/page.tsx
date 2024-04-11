@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { toJpeg } from "html-to-image";
 import UAParser from "ua-parser-js";
-import { Dialog, DialogTrigger } from "~/components/dialog";
+import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import ConfirmPopup from "~/components/confirmPopup";
 import DownloadImageAlert from "~/components/downloadImageAlert";
 import { DownloadIcon } from "~/components/icons/downloadIcon";
@@ -70,6 +70,11 @@ export default function Page() {
     } catch (err) {
       console.log(err);
     }
+
+    setDownloadAlert(true);
+    window.setTimeout(() => {
+      setDownloadAlert(false);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -184,7 +189,7 @@ export default function Page() {
         </DialogTrigger>
         <ConfirmPopup href="/7-5" confirmText="ยืนยันเพื่อไปต่อ" />
       </Dialog>
-      <div className="absolute top-[86%] z-10 m-auto">
+      <div className="absolute top-[86%] z-10">
         <Dialog>
           <DialogTrigger asChild>
             <motion.div

@@ -1,18 +1,19 @@
 "use client";
 
-import { DialogContent } from "../components/dialog";
+import { DialogContent } from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 
 const DownloadImageAlert = () => {
   return (
-    <DialogContent className="top-0 flex flex-col items-center border-none">
+    <DialogContent className="fixed top-0 h-screen border-none">
       <motion.div
-        initial={{ y: -20 }}
-        animate={{ y: 75 }}
-        exit={{ y: -20 }}
+        initial={{ y: -70 }}
+        animate={{ y: 10 }}
+        exit={{ y: -70 }}
         transition={{
-          duration: 0.8,
+          duration: 1,
         }}
+        className="fixed left-0 flex w-full justify-center"
       >
         <div className="z-4 flex h-[72px] w-[358px] items-start gap-2 rounded-2xl bg-white p-4 shadow-[0px_8px_20px_0px_#00000026]">
           <svg
@@ -31,10 +32,10 @@ const DownloadImageAlert = () => {
             <path d="m9 12 2 2 4-4" fill="#00B488" />
           </svg>
           <div className="flex flex-col items-start">
-            <p className="text-greenDownload text-sm font-semibold">
+            <p className="text-sm font-semibold text-greenDownload">
               ดาวน์โหลดสำเร็จ
             </p>
-            <p className="text-blackDownload text-xs">
+            <p className="text-xs text-blackDownload">
               รูปภาพถูกบันทึกลงเครื่องของคุณ
             </p>
           </div>
