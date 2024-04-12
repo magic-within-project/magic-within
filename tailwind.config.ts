@@ -22,6 +22,7 @@ export default {
         yellow2: "#403A20",
         lightYellow: "#FFFDC9",
         darkPurple: "#341F42",
+        brown: "#74564A",
         "mw-white": "#F8F8F7",
       },
       backgroundImage: {

@@ -20,6 +20,13 @@ const InteractiveBackground = () => {
             : undefined,
         );
         break;
+      case "6-19" :
+        backgroundMapConfig[page].image.forEach((image, index) => {
+          setTimeout(() => {
+            setBgImgSrc(image);
+          }, index * backgroundMapConfig[page].stopMotionDuration);
+        });
+        break;
     }
   }, [page, router]);
 
