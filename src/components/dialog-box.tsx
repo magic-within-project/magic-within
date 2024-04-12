@@ -13,6 +13,7 @@ export function DialogBox({
   delay = 1.5,
   handleClick,
   animationKey,
+  boxSize = "l",
 }: {
   characterName: string;
   dialog: string;
@@ -23,6 +24,7 @@ export function DialogBox({
   delay?: number;
   handleClick?: () => void;
   animationKey?: number;
+  boxSize?: "s" | "m" | "l";
 }): JSX.Element {
   return (
     <>
@@ -46,7 +48,10 @@ export function DialogBox({
             <p>{characterName}</p>
           </div>
           <Link href={nextPage} onClick={handleClick ? handleClick : () => {}}>
-            <div className="z-10 flex h-[148px] flex-col whitespace-pre-line rounded-2xl bg-white px-6 py-4">
+            <div
+              className={`z-10 flex flex-col whitespace-pre-line rounded-2xl bg-white px-6 py-4 
+              ${boxSize === "l" && "h-[148px]"}  ${boxSize === "m" && "h-[132px]"}  ${boxSize === "s" && "h-[120px]"}`}
+            >
               <p>{dialog}</p>
               <div className="ml-auto mt-auto">
                 <SortDownIcon />
