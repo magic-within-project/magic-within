@@ -15,8 +15,8 @@ import React from "react";
 
 export default function Page() {
 
-  const selfReframing = localStorage.getItem("selfReframing")
-    const doubtYourselfFeeling = localStorage.getItem("doubtYourselfFeeling");
+  const selfReframing = typeof window !== "undefined" ? localStorage.getItem("selfReframing") : null;
+    const doubtYourselfFeeling = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
     const [downloadAlert, setDownloadAlert] = useState<boolean>(false);
     const [userAgentData, setUserAgentData] = useState<string>();
     let len = selfReframing?.length ?? 0
