@@ -8,7 +8,7 @@ export default {
       charmonman: ["var(--charmonman-font)", "serif"],
       plaphao: ["var(--plaphao-font)", "sans-serif"],
     },
-    
+
     extend: {
       colors: {
         default: "#272018",
