@@ -1,4 +1,7 @@
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
+import { addName } from "./firebaseConfig";
 
 import { redirect } from "next/navigation";
 
