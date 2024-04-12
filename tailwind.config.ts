@@ -24,6 +24,10 @@ export default {
         darkPurple: "#341F42",
         brown: "#74564A",
         "mw-white": "#F8F8F7",
+        greenDownload: "#00B488",
+        blackDownload: "#293038",
+        blackConfirm: "#1E1B20",
+        whiteButton: "#F8F8F7",
       },
       backgroundImage: {
         "white-radial":
