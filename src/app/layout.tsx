@@ -3,6 +3,8 @@ import "~/styles/globals.css";
 import { Charmonman, IBM_Plex_Sans_Thai_Looped } from "next/font/google";
 import { cn } from "../lib/utils";
 import localFont from "next/font/local";
+import Sounds from "~/components/sounds";
+import SoundToggle from "~/components/sound-toggle";
 
 const ibmPlexSansThaiLooped = IBM_Plex_Sans_Thai_Looped({
   weight: ["400", "500", "600", "700"],
@@ -54,6 +56,10 @@ export default function RootLayout({
           plaphao.variable,
         )}
       >
+        <Sounds />
+        <div className="absolute right-5 top-10 z-50 flex w-full items-center justify-end">
+          <SoundToggle />
+        </div>
         {children}
       </body>
     </html>
