@@ -47,7 +47,7 @@ export function DialogBox({
           <div className=" text-mw-white">
             <p>{characterName}</p>
           </div>
-          <Link href={nextPage} onClick={handleClick ? handleClick : () => {}}>
+          <Link href={nextPage} onClick={handleClick ? handleClick : undefined}>
             <div
               className={`z-10 flex flex-col whitespace-pre-line rounded-2xl bg-white px-6 py-4 
               ${boxSize === "l" && "h-[148px]"}  ${boxSize === "m" && "h-[132px]"}  ${boxSize === "s" && "h-[120px]"}`}

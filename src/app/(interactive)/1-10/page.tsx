@@ -19,7 +19,7 @@ export default function Page() {
         <div className="fixed h-full w-full bg-white opacity-20" />
         <DialogBox
           characterName="ผู้อำนวยการ"
-          dialog={dialog[dialogNo] || "อะแฮ่ม อะแฮ่ม ทุกคนฟังแล้วหรือยังครับ"}
+          dialog={dialog[dialogNo] ?? "อะแฮ่ม อะแฮ่ม ทุกคนฟังแล้วหรือยังครับ"}
           characterImg="director"
           nextPage={dialogNo === dialog.length - 1 ? "/1-11" : "#"}
           height={356}

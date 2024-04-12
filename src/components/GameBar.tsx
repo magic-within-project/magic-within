@@ -25,7 +25,7 @@ export default function GameBar() {
         <AnimatedDiv className="absolute top-0 left-0"></AnimatedDiv>
       </div>
       <div className='flex justify-center items-center mt-6'>
-      <button onClick={() => {}} className='rounded-lg bg-[#FF9F19] text-white pl-5 pr-5 pt-2 pb-2'>หยุด</button>
+      <button className='rounded-lg bg-[#FF9F19] text-white pl-5 pr-5 pt-2 pb-2'>หยุด</button>
       </div>
     </div>
   );

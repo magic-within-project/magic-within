@@ -43,7 +43,7 @@ export default function Page() {
     }
     const position = getCurrentPosition();
     setCurrentPosition(position);
-    const redDiv: any = document.getElementById("red");
+    const redDiv = document.getElementById("red")!;
     const redDivRect = redDiv.getBoundingClientRect();
     const origin =
       document.getElementById("arrow-game-bar")?.getBoundingClientRect()
@@ -72,7 +72,7 @@ export default function Page() {
     default: "rounded-lg bg-[#FF9F19] pb-2 pl-5 pr-5 pt-2 text-white",
     otherState: "rounded-lg bg-[#512C4D] pb-2 pl-5 pr-5 pt-2 text-white",
   };
-  let buttonClassName =
+  const buttonClassName =
     currentButton === "เริ่ม"
       ? buttonClasses.default
       : buttonClasses.otherState;

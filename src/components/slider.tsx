@@ -7,9 +7,9 @@ const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>
 >(({ onValueChange, ...props }, ref) => {
-  const [value, setValue] = React.useState(props.defaultValue || props.value);
+  const [value, setValue] = React.useState(props.defaultValue ?? props.value);
 
-  const handleChange = (newValue: any) => {
+  const handleChange = (newValue: number[]) => {
     setValue(newValue);
     onValueChange && onValueChange(newValue);
   };
@@ -22,11 +22,11 @@ const Slider = React.forwardRef<
       onValueChange={handleChange}
       value={value}
     >
-      <SliderPrimitive.Track className="relative h-4 w-full grow overflow-hidden rounded-full bg-mwWhite">
-        <SliderPrimitive.Range className="absolute h-full bg-yellow" />
+      <SliderPrimitive.Track className="bg-mwWhite relative h-4 w-full grow overflow-hidden rounded-full">
+        <SliderPrimitive.Range className="bg-yellow absolute h-full" />
       </SliderPrimitive.Track>
       <SliderPrimitive.Thumb
-        className="ring-offset-background focus-visible:ring-ring block h-7 w-7 rounded-full bg-yellow transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+        className="ring-offset-background focus-visible:ring-ring bg-yellow block h-7 w-7 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
         style={{
           boxShadow: "0 4px 10px 5px rgba(0, 0, 0, 0.2)",
           position: "relative",
