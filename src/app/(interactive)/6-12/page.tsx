@@ -5,7 +5,7 @@ import Next from "./next";
 import { motion } from "framer-motion";
 
 
-export default function page() {
+export default function Page() {
     const [char,setChar] = useState<string>("")
     const handleClick = () => {
         localStorage.setItem("doubtYourselfFeeling",char);

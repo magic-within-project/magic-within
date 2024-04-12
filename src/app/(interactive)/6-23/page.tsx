@@ -13,7 +13,7 @@ import { DialogTrigger } from "~/components/dialog";
 import React from "react";
 
 export default function Page() {
-  const supportQuote = localStorage.getItem("doubtYourselfFeeling");
+  const supportQuote = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
   const [downloadAlert, setDownloadAlert] = useState<boolean>(false);
   const [userAgentData, setUserAgentData] = useState<string>();
 
@@ -74,7 +74,7 @@ export default function Page() {
     };
 
     try {
-      navigator.share(shareData);
+      await navigator.share(shareData);
       console.log("Shared successfully");
       setDownloadAlert(true);
       window.setTimeout(() => {

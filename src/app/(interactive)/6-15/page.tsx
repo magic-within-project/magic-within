@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Next from "./next";
-export default function page() {
-    const doubtYourselfFeeling = localStorage.getItem("doubtYourselfFeeling");
+export default function Page() {
+    const doubtYourselfFeeling = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
     const [char,setChar] = useState<string>("")
     const handleClick = () => {
         localStorage.setItem("selfReframing",char)
@@ -17,7 +17,7 @@ export default function page() {
             animate={{opacity:1,transition:{duration:3}}}
             className = "">
                 <div className="grid justiy-items-center">
-                <h1 className="mt-10 w-80 h-48 text-white font-plaphao justify-self-center content-center text-wrap ">'{doubtYourselfFeeling}'</h1>
+                <h1 className="mt-10 w-80 h-48 text-white font-plaphao justify-self-center content-center text-wrap ">&apos;{doubtYourselfFeeling}&apos;</h1>
                 <h1 className=" my-8 justify-self-center font-plaphao text-white">แต่...</h1>
                 <textarea placeholder="โปรดพิมพ์คำตอบของคุณ" className="p-5 w-5/6 justify-self-center h-48 rounded-lg drop-shadow-md text-sm" 
                 onChange={(e) => setChar(e.target.value) } maxLength={3000}></textarea>

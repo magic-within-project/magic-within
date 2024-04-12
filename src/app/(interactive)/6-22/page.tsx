@@ -5,8 +5,8 @@ import { DownloadIcon } from "./downloadIcon";
 import Link from "next/link";
 
 export default function page() {
-  const selfReframing = localStorage.getItem("selfReframing");
-  const doubtYourselfFeeling = localStorage.getItem("doubtYourselfFeeling");
+  const selfReframing = typeof window !== "undefined" ? localStorage.getItem("selfReframing") : null;
+  const doubtYourselfFeeling = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
 
   let len = selfReframing?.length ?? 0;
   len += doubtYourselfFeeling?.length ?? 0;

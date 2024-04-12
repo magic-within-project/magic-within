@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 
 export default function page(){
-    const doubtYourselfFeeling = localStorage.getItem("doubtYourselfFeeling");
+    const doubtYourselfFeeling = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
     // let line = ""
     // for(let i = 0 ; i < 300 ; i++){
     //     const c = doubtYourselfFeeling?.charAt(i)
@@ -23,7 +22,7 @@ export default function page(){
             className = "">
                 <div className="grid justiy-items-center">
                 
-                <h1 className="mt-28 w-80 h-80  text-white font-plaphao justify-self-center content-center text-wrap ">'{doubtYourselfFeeling}'</h1>
+                <h1 className="mt-28 w-80 h-80  text-white font-plaphao justify-self-center content-center text-wrap ">&apos;{doubtYourselfFeeling}&apos;</h1>
                 </div>
 
             </motion.div>

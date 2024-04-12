@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { DownloadIcon } from "./downloadIcon";
 import { useEffect,useState } from "react";
 import Link from "next/link";
@@ -10,19 +9,18 @@ import { AnimatePresence } from "framer-motion";
 import DownloadImageAlert from "~/components/downloadImageAlert";
 import { Dialog } from "~/components/dialog";
 import { DialogTrigger } from "~/components/dialog";
-import styled from 'styled-components';
 import React from "react";
 
     
 
-export default function page() {
+export default function Page() {
 
   const selfReframing = localStorage.getItem("selfReframing")
     const doubtYourselfFeeling = localStorage.getItem("doubtYourselfFeeling");
     const [downloadAlert, setDownloadAlert] = useState<boolean>(false);
     const [userAgentData, setUserAgentData] = useState<string>();
-    let len:any = selfReframing?.length 
-    len +=  doubtYourselfFeeling?.length
+    let len = selfReframing?.length ?? 0
+    len +=  doubtYourselfFeeling?.length ?? 0
     console.log(len)
     if(len > 750) {
       len =  0.45 + ((3000-len)*(0.33)/2250)
@@ -95,14 +93,14 @@ export default function page() {
         };
     
         try {
-          navigator.share(shareData);
+          await navigator.share(shareData);
           console.log("Shared successfully");
           setDownloadAlert(true);
           window.setTimeout(() => {
             setDownloadAlert(false);
           }, 3000);
         } catch (err) {
-          console.log("Error: " + err);
+          console.error("Error: ", err);
         }
       };
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function page() {
-  const supportQuote = localStorage.getItem("doubtYourselfFeeling");
+  const supportQuote = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
 
   return (
     //<Link href={link}>
