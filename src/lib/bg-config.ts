@@ -96,11 +96,11 @@ export const backgroundMapConfig = {
     image: "/img/2-1.webp",
   },
   "2-5": {
-    imagePreload: ["/img/2-1.webp"],
+    imagePreload: ["/img/2-4.webp"],
     image: "/img/2-1.webp",
   },
   "2-6": {
-    imagePreload: ["/img/2-4.webp"],
+    imagePreload: ["/img/2-5.webp"],
     image: "/img/2-4.webp",
   },
   "2-7": {
@@ -116,15 +116,15 @@ export const backgroundMapConfig = {
     image: "/img/2-5.webp",
   },
   "2-10": {
-    imagePreload: ["/img/2-5.webp"],
+    imagePreload: ["/img/2-11.webp"],
     image: "/img/2-5.webp",
   },
   "2-11": {
-    imagePreload: ["/img/2-11.webp"],
+    imagePreload: ["/img/2-12.webp"],
     image: "/img/2-11.webp",
   },
   "2-12": {
-    imagePreload: ["/img/2-12.webp"],
+    imagePreload: ["/img/2-13.webp"],
     image: "/img/2-12.webp",
   },
   "2-13": {
@@ -140,7 +140,7 @@ export const backgroundMapConfig = {
     image: "/img/2-13.webp",
   },
   "2-16": {
-    imagePreload: ["/img/2-13.webp"],
+    imagePreload: ["/img/2-1.webp"],
     image: "/img/2-13.webp",
   },
   "2-17": {

@@ -14,6 +14,7 @@ export default function Page() {
           nextPage="/2-14"
           isCenter={false}
           height={464}
+          delay={1}
         />
       </main>
     </>

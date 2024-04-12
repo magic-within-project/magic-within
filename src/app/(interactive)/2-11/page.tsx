@@ -23,7 +23,7 @@ export default function Page() {
     animation: ${isAnimationStopped
       ? "none"
       : css`
-          ${moveDivAnimation} 0.85s linear infinite alternate
+          ${moveDivAnimation} 0.9s linear infinite alternate
         `};
     transform: translateY(-25%);
     left: ${currentPosition}px;
