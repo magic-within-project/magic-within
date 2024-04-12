@@ -36,7 +36,7 @@ const plaphao = localFont({
 export const metadata = {
   title: "Magic Within",
   description: "Magic Within Project ",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/logo.webp" }],
 };
 
 export default function RootLayout({
