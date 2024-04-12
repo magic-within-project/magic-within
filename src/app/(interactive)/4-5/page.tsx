@@ -60,7 +60,6 @@ export default function Pane() {
   ]);
   const [finish, setFinish] = useState<boolean>(false);
   const [pass, setPass] = useState<number>(0);
-  const [size, setSize] = useState<number>(2);
 
   const checkSequence = () => {
     let check = false;
@@ -138,7 +137,6 @@ export default function Pane() {
     setReframe([]);
     setLine([["แต่"], [], []]);
     setFinish(false);
-    setSize(0);
   };
   const addReframe = (l: string) => {
     if (reframe.length + 1 === count) {
