@@ -8,13 +8,11 @@ export default function Reframe({title,pass,addLetters,removeReframe}:Prop){
         removeReframe(title)
     }
     }
-    const NClick = () => {
 
-    }
     if(title === "แต่มันพึ่งจะเริ่มต้นเอง"){
         return(
             <div className="mx-1 ">
-                <button className="text-disable w-30  text-lg p-3" onClick={NClick} >{title}</button>
+                <button className="text-disable w-30  text-lg p-3" >{title}</button>
                 
             </div>
         );

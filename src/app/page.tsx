@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { addName } from "./firebaseConfig";
-
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 //import Pane from "~/app/scene4-4/Pane";
 //import page from "~/app/(interactive)/4-5/page"

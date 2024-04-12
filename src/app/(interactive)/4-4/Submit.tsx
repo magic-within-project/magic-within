@@ -5,7 +5,7 @@ export default function Submit({finish,pass,checkSequence,setPass,reset}:Prop){
         setPass(0);
         reset();
     }
-    const nextPage = () => {}
+
     if(finish ){
         if(pass === 0){
             return (
@@ -18,7 +18,7 @@ export default function Submit({finish,pass,checkSequence,setPass,reset}:Prop){
         } else if(pass === 1){
             return (
                 <Link href="/4-5">
-            <button className="h-10 w-24 mt-48 bg-purple text-white text-center text-lg  p-1.5 rounded-lg hover:bg-active hover:text-white  animate-bounce  " type ="submit" onClick={nextPage}> ต่อไป </button>
+            <button className="h-10 w-24 mt-48 bg-purple text-white text-center text-lg  p-1.5 rounded-lg hover:bg-active hover:text-white  animate-bounce  " type ="submit" > ต่อไป </button>
             </Link>
             )
     }
