@@ -16,6 +16,18 @@ const InteractiveBackground = () => {
       default:
         setBgImgSrc(backgroundMapConfig[page].image);
         break;
+      case "6-25":
+        backgroundMapConfig[page].image.forEach((image, index) => {
+          setTimeout(() => {
+            setBgImgSrc(image);
+            if (index === backgroundMapConfig[page].image.length - 1) {
+              setTimeout(() => {
+                router.push("6-26");
+              }, backgroundMapConfig[page].stopMotionDuration / 2);
+            }
+          }, index * backgroundMapConfig[page].stopMotionDuration);
+        });
+        break;
     }
   }, [page, router]);
 

@@ -21,7 +21,7 @@ export const backgroundMapConfig = {
   },
   "6-5": {
     image: "/img/6-1.webp",
-    imagePreload: ["/img/6-1.webp"],
+    imagePreload: ["/img/6-6.webp"],
   },
   "6-6": {
     image: "/img/6-6.webp",
@@ -37,34 +37,28 @@ export const backgroundMapConfig = {
   },
   "6-9": {
     image: "/img/6-6.webp",
-    imagePreload: ["/img/6-6.webp"],
+    imagePreload: [],
   },
   "6-25": {
-    image: "/img/6-25.webp",
-    imagePreload: ["/img/6-25.webp"],
+    image: [
+      "/img/6-25.webp",
+      "/img/6-26.webp",
+      "/img/6-27.webp",
+      "/img/6-28.webp",
+    ],
+    stopMotionDuration: 1200,
+    imagePreload: ["/img/6-29.webp"],
   },
   "6-26": {
-    image: "/img/6-26.webp",
-    imagePreload: ["/img/6-26.webp"],
+    image: "/img/6-29.webp",
+    imagePreload: [],
   },
   "6-27": {
-    image: "/img/6-27.webp",
-    imagePreload: ["/img/6-27.webp"],
+    image: "/img/6-29.webp",
+    imagePreload: [],
   },
   "6-28": {
-    image: "/img/6-28.webp",
-    imagePreload: ["/img/6-28.webp"],
-  },
-  "6-29": {
     image: "/img/6-29.webp",
-    imagePreload: ["/img/6-29.webp"],
-  },
-  "6-30": {
-    image: "/img/6-29.webp",
-    imagePreload: ["/img/6-29.webp"],
-  },
-  "6-31": {
-    image: "/img/6-29.webp",
-    imagePreload: ["/img/6-29.webp"],
+    imagePreload: [],
   },
 } as const;
