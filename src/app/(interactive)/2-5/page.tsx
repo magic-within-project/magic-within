@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { DialogBox } from "~/components/dialog-box";
 export default function Page() {
   return (
@@ -13,6 +12,7 @@ export default function Page() {
           nextPage="2-6"
           isCenter={false}
           height={464}
+          delay={1}
         />
       </main>
     </>

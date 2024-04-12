@@ -14,6 +14,7 @@ const name = localStorage.getItem("name");
           nextPage="/2-17"
           isCenter={false}
           height={464}
+          delay={1}
         />
       </main>
     </>
