@@ -12,7 +12,6 @@ export default function Page() {
       beforeSelfRate: localStorage.getItem("beforeSelfRate") ?? "",
       heartReframing: localStorage.getItem("heartReframing") ?? "",
       supportQuote: localStorage.getItem("supportQuote") ?? "",
-      isDoubtYourself: localStorage.getItem("isDoubtYourself") ?? "",
       doubtYourselfTopic: localStorage.getItem("doubtYourselfTopic") ?? "",
       isDoubtYourselfFeelDown:
         localStorage.getItem("isDoubtYourselfFeelDown") ?? "",
