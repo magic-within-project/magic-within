@@ -233,11 +233,11 @@ export const backgroundMapConfig = {
   },
   "4-7": {
     image: "/bg/bg3.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/5-1.webp"],
   },
   "5-1": {
     image: "/bg/5-1.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/3-3.webp"],
   },
   "5-1a": {
     image: "/bg/3-3.webp",
@@ -257,7 +257,7 @@ export const backgroundMapConfig = {
   },
   "5-5": {
     image: "/bg/3-3.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/5-6.webp"],
   },
   "5-6": {
     image: "/bg/5-6.webp",
@@ -265,11 +265,11 @@ export const backgroundMapConfig = {
   },
   "5-7": {
     image: "/bg/5-6.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/5-8.webp"],
   },
   "5-8": {
     image: "/bg/5-8.webp",
-    imagePreload: [],
+    imagePreload: ["/bg/5-6.webp"],
   },
   "5-9": {
     image: "/bg/5-6.webp",
@@ -285,7 +285,7 @@ export const backgroundMapConfig = {
   },
   "5-12": {
     image: "/bg/3-1.webp",
-    imagePreload: [],
+    imagePreload: ["/img/6-1.webp"],
   },
   "6-1": {
     image: "/img/6-1.webp",
