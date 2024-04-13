@@ -8,10 +8,10 @@ export default function Page() {
     typeof window !== "undefined" ? window.localStorage.getItem("name") : null;
   return (
     <>
-      <main className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat">
+      <main className="absolute h-full w-full justify-center bg-cover bg-no-repeat">
         <div className="fixed h-full w-full bg-white opacity-20" />
         <motion.div
-          className="absolute top-[200px] w-full text-center"
+          className="absolute bottom-[640px] w-full text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         >
