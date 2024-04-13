@@ -9,7 +9,7 @@ export default function page() {
         <div>
             <motion.div
                 initial={{opacity:0}}
-                animate={{opacity:1,transition:{duration:1,delay:13}}}
+                animate={{opacity:1,transition:{duration:1,delay:3}}}
             >
                 <Link href="6-20" className="">
                     <div className="grid justify-items-center h-screen w-1024">

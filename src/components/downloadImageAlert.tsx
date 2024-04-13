@@ -2,7 +2,6 @@
 
 import { DialogContent } from "../components/dialog";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 
 const DownloadImageAlert = () => {
   return (
