@@ -15,7 +15,7 @@ export default function Page() {
         <motion.div
           className="absolute bottom-[68%] right-[25px] text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <div className="absolute right-[-60px] top-[-100px] h-[325px] w-[430px] bg-white-radial opacity-65" />
           <div className="opacity-95">

@@ -13,7 +13,7 @@ export default function Page() {
         <motion.div
           className="absolute top-[200px] w-full text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <div className="absolute top-[-150px] h-[70vh] w-full bg-white-radial opacity-80" />
           <div className="opacity-95">

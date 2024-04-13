@@ -13,7 +13,7 @@ export default function Page() {
         <motion.div
           className="absolute bottom-[640px] w-full text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <p>มีเสียงเรียกชื่อของคุณดังขึ้น</p>
         </motion.div>

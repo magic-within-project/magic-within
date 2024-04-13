@@ -13,7 +13,7 @@ export default function Page() {
         <motion.div
           className="absolute right-[25px] top-[150px] text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <p>
             และแล้ววันนี้ก็มาถึง...
