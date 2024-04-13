@@ -12,7 +12,7 @@ export default function Page() {
           nextPage="2-6"
           isCenter={false}
           height={464}
-          delay={1}
+          delay={0.5}
         />
       </main>
     </>
