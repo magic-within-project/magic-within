@@ -12,7 +12,7 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 0.5,
           }}
           className="flex min-h-screen flex-col items-center justify-center text-center"
         >

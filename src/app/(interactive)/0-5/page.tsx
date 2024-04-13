@@ -15,7 +15,7 @@ export default function Page() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 1,
-          delay: 1,
+          delay: 0.5,
         }}
         className="flex min-h-screen flex-col items-center text-center text-mwWhite"
       >
@@ -40,7 +40,7 @@ export default function Page() {
         </div>
         <div className="absolute bottom-[14vh] w-full">
           <Link href="/0-6">
-            <button className="bg-yellow h-[4.5vh] w-1/4 rounded-lg font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <button className="h-[4.5vh] w-1/4 rounded-lg bg-yellow font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               ตกลง
             </button>
           </Link>

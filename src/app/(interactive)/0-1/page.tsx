@@ -12,9 +12,9 @@ export default function Page() {
           animate={{ opacity: 0 }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 0.5,
           }}
-          className="bg-0-0 fixed flex min-h-screen w-full items-center justify-center bg-cover bg-no-repeat"
+          className="fixed flex min-h-screen w-full items-center justify-center bg-0-0 bg-cover bg-no-repeat"
         >
           <Image
             src="/img/logo_MW2lines.webp"
@@ -28,7 +28,7 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1,
           }}
           className="flex min-h-screen flex-col items-center justify-center text-center"
         >

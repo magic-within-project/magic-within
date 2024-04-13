@@ -6,7 +6,6 @@ interface collectedData {
   beforeSelfRate: string;
   heartReframing: string;
   supportQuote: string;
-  isDoubtYourself: string;
   doubtYourselfTopic: string;
   isDoubtYourselfFeelDown: string;
   doubtYourselfFeeling: string;
