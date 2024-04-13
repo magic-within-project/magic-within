@@ -11,9 +11,9 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 0.5,
           }}
-          className="text-mwWhite flex min-h-screen flex-col items-center text-center"
+          className="flex min-h-screen flex-col items-center text-center text-mwWhite"
         >
           <p className="absolute top-[24vh] leading-7">
             หลังจากการเดินทางทั้งหมดในวันนี้
