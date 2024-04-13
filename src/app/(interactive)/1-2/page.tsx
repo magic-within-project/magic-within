@@ -13,7 +13,7 @@ export default function Page() {
         <motion.div
           className="absolute top-[200px] w-full text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
         >
           <div className="absolute top-[-150px] h-[70vh] w-full bg-white-radial opacity-80" />
           <div className="opacity-95">
@@ -21,7 +21,7 @@ export default function Page() {
               Magic Academy
             </h2>
             <p>
-              สถาบันเวทมนตร์ชั้นนำที่นักเวทย์ในโลกเวทมนตร์ <br />
+              สถาบันเวทมนตร์ชั้นนำที่นักเวทในโลกเวทมนตร์ <br />
               ต่างก็ต้องการจะเข้ามาเล่าเรียน <br />
               และที่นี่ยังเป็นที่รู้จัก <br />
               ในเรื่องของการคัดเลือกนักเวทที่เข้มงวด <br />
