@@ -19,7 +19,7 @@ export function DialogBox({
   characterName: string;
   dialog: string;
   nextPage: string;
-  characterImg?: "heart" | "director" | "teacher";
+  characterImg?: "heart" | "director" | "teacher" | "heart-sad";
   isCenter?: boolean;
   height?: number;
   delay?: number;

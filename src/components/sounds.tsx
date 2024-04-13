@@ -8,7 +8,7 @@ import { scenePageMap, soundPageMap } from "~/lib/sound-config";
 
 const Sounds = () => {
   const path = usePathname();
-  const page = path.split("/")[1] as string;
+  const page = path.split("/")[1]!;
   const defaultBackingTrackVolume = 0.75;
   const defaultSoundEffectVolume = 0.3;
   const scene = page.split("-")[0] as keyof typeof scenePageMap;
@@ -42,10 +42,8 @@ const Sounds = () => {
     let nextSoundEffect: typeof soundEffect;
     let nextBackgroundVolume: number | undefined;
     if (page in soundPageMap) {
-      nextSoundEffect =
-        soundPageMap[page as keyof typeof soundPageMap]?.soundEffect;
-      nextBackgroundVolume =
-        soundPageMap[page as keyof typeof soundPageMap]?.backgroundVolume;
+      nextSoundEffect = soundPageMap[page]?.soundEffect;
+      nextBackgroundVolume = soundPageMap[page]?.backgroundVolume;
     }
     if (nextSoundEffect !== soundEffect) {
       if (soundEffectRef.current?.howler.playing()) {

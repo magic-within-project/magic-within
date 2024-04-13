@@ -1,5 +1,10 @@
 export const scenePageMap = {
   "1": "/sound/track/magical-fantasy.mp3",
+  "2": "/sound/track/folk-medieval.mp3",
+  "3": "/sound/track/illusions.mp3",
+  "4": "/sound/track/illusions.mp3",
+  "5": "/sound/track/instructions-for-living.mp3",
+  "6": "/sound/track/purpose.mp3",
 } as const;
 
 export const soundPageMap: Record<

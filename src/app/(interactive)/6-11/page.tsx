@@ -2,17 +2,12 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Page() {
-  const [isDoubtYourselfFeelDown, setIsDoubtYourselfFeelDown] =
-    useState<boolean>(true);
   const Yes = () => {
-    setIsDoubtYourselfFeelDown(true);
     localStorage.setItem("isDoubtYourselfFeelDown", "true");
   };
   const No = () => {
-    setIsDoubtYourselfFeelDown(false);
     localStorage.setItem("isDoubtYourselfFeelDown", "false");
   };
 
