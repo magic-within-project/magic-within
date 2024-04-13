@@ -25,7 +25,7 @@ export default function Page() {
                 <Next char={char} handleClick={handleClick}/>
                 </div>
                 </div>
-                <h1 className="absolute bottom-[96px] right-[40px] text-white text-[15px]">{char.length}/3000</h1>
+                <h1 className="absolute bottom-[170px] right-[70px] text-white text-[15px]">{char.length}/3000</h1>
 
             </motion.div>
             
