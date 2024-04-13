@@ -15,7 +15,6 @@ export default function Page() {
           characterImg="heart"
           nextPage={"/5-5"}
           height={535}
-          delay={1}
         />
       </main>
     </>
