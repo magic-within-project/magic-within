@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef, useRef } from "react";
-import ReactHowler, { PropTypes } from "react-howler";
+import ReactHowler, { type PropTypes } from "react-howler";
 import { useSoundStore } from "~/store/sound";
 
 type Ref = ReactHowler;

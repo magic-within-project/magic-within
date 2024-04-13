@@ -1,9 +1,9 @@
 "use client";
 
-import { backgroundMapConfig } from "../lib/bg-config";
+import type { backgroundMapConfig } from "../lib/bg-config";
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
+import Image, { type ImageProps } from "next/image";
 import { useEffect, useState } from "react";
 
 interface AnimatedImageProps extends ImageProps {

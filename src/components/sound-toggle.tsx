@@ -4,12 +4,10 @@ import { Volume2, VolumeX } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useSoundStore } from "~/store/sound";
 
-type Props = {};
-
-const SoundToggle = (props: Props) => {
+const SoundToggle = () => {
   const { toggle, isPlaying } = useSoundStore();
   const path = usePathname();
-  const page = path.split("/")[1] as string;
+  const page = path.split("/")[1]!;
   const scene = page.split("-")[0];
   if (scene !== "7")
     return (
