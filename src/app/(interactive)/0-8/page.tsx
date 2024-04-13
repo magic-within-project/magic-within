@@ -11,11 +11,11 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1.5,
           }}
           className="h-full w-full"
         >
-          <div className="bg-lightYellow  fixed h-full w-full" />
+          <div className="fixed h-full w-full bg-lightYellow" />
         </motion.div>
       </main>
     </Link>

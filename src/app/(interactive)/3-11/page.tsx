@@ -11,7 +11,7 @@ export default function Page() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 0.5,
           }}
           className="flex min-h-screen flex-col items-center text-center text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
         >

@@ -12,7 +12,7 @@ export default function Page() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 1,
-          delay: 1,
+          delay: 0.5,
         }}
         className="flex min-h-screen flex-col items-center text-center text-white"
       >
@@ -32,7 +32,7 @@ export default function Page() {
         />
         <div className="absolute bottom-[10vh] w-full">
           <Link href="/4-1">
-            <button className="text-mwWhite z-10 h-[4.5vh] w-1/4 rounded-lg bg-purple font-semibold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            <button className="z-10 h-[4.5vh] w-1/4 rounded-lg bg-purple font-semibold text-mwWhite drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
               ร่ายเวท!
             </button>
           </Link>
