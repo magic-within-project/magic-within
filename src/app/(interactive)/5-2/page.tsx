@@ -10,7 +10,7 @@ export default function Page() {
         <DialogBox
           characterName="ฮาร์ท"
           dialog={"แต่ว่า ..\nเราก็ยังรู้สึกไม่มั่นใจมากเท่าไหร่อยู่ดี"}
-          characterImg="heart"
+          characterImg="heart-sad"
           nextPage={"/5-3"}
           height={535}
           delay={1}
