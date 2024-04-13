@@ -8,7 +8,7 @@ export default function page(){
     return (
         <motion.div
             initial={{opacity:0}}
-            animate={{opacity:1,transition:{duration:1,delay:1}}}
+            animate={{opacity:1,transition:{duration:1,delay:0.5}}}
         >
             <Link href="6-19" className="">
                 <div className="grid h-screen">

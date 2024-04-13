@@ -115,7 +115,7 @@ export default function Page() {
         <div>
           <div className="z-10 h-screen w-1024 bg-[url(/bg/bg6-20.webp)] bg-[length:450px_900px] bg-center" id="exportedWords"  >
             <div>
-              <div className="absolute h-2048 w-1024 top-5 grid justify-items-center w-[252px] mx-24">
+            <div className="absolute top-5 left-[80px] grid w-[252px] justify-items-center">
                 <div style={{ fontSize: `${len}rem` }} className="mt-[102px] justify-self-center text-center content-center font-size:30% text-wrap text-brown drop-shadow ">
                   <h1>{doubtYourselfFeeling}</h1>
                 </div>
@@ -134,7 +134,7 @@ export default function Page() {
         </div>
       
         <Dialog>
-                <DialogTrigger asChild className="z-20 absolute right-[85px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full ">
+                <DialogTrigger asChild className="z-20 absolute right-[65px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full ">
                     {userAgentData === "iPhone" ? (
                         <div onClick={shareImage}>
                             <DownloadIcon />
@@ -154,7 +154,7 @@ export default function Page() {
             <div className="grid justify-items-center h-5/6"onClick={click} >
             {/* <h1 style={{filter: `blur(5px)`}}className="absolute justify-self-center bottom-6 bg-white rounded-3xl p-3 text-transparent">แตะเพื่อไปต่อ</h1> */}
 
-                <h1 className="absolute justify-self-center bottom-7  rounded-3xl p-2 animate-pulse drop-shadow ">แตะเพื่อไปต่อ</h1>
+                <h1 className="absolute justify-self-center bottom-7 left-[145px] rounded-3xl p-2 animate-pulse drop-shadow ">แตะเพื่อไปต่อ</h1>
             </div>
             </Link>
             

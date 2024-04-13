@@ -24,7 +24,7 @@ export default function Page() {
             <textarea className="h-80 w-5/6 justify-self-center mt-8 rounded-2xl p-5 drop-shadow-md" 
             placeholder="โปรดพิมพ์คำตอบของคุณ" required = {true} maxLength={300} onChange={(e)=>setChar(e.target.value)}></textarea>
             <div className = "justify-self-center">
-            <h1 className="text-gray-600 absolute right-16 bottom-72">{char.length}/300</h1>
+            <h1 className="text-gray-600 absolute right-16 bottom-[300px]">{char.length}/300</h1>
             <Next char={char} handleClick={handleClick} />
             </div>
            
