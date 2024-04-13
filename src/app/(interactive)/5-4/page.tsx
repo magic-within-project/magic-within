@@ -12,7 +12,7 @@ export default function Page() {
           dialog={
             "ในที่ ๆ เต็มไปด้วยคนเก่ง ๆ\nเยอะแยะไปหมด\nแกว่าเราจะสู้คนอื่นเขาได้จริง ๆ หรอ?"
           }
-          characterImg="heart"
+          characterImg="heart-sad"
           nextPage={"/5-5"}
           height={535}
         />
