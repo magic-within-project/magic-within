@@ -12,9 +12,9 @@ export default function Page() {
           className="absolute inset-x-0 top-[20%] p-10"
         >
           <p className="text-center text-white">
-            "สิ่งสำคัญสำหรับการยิงเวทมนตร์
+            &quot;สิ่งสำคัญสำหรับการยิงเวทมนตร์
             <br />
-            คือความมั่นคงและความแม่นยำ"
+            คือความมั่นคงและความแม่นยำ&quot;
           </p>
         </motion.div>
       </div>

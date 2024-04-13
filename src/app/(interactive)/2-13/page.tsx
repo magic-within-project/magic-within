@@ -2,11 +2,12 @@
 
 import { DialogBox } from "~/components/dialog-box";
 export default function Page() {
-const name = localStorage.getItem("name");
+  const name =
+    typeof window !== "undefined" ? window.localStorage.getItem("name") : null;
   return (
     <>
       <main className="absolute flex h-full w-full justify-center bg-cover bg-no-repeat">
-      <DialogBox
+        <DialogBox
           characterName="อาจารย์"
           dialog={`เก่งมาก!\nทุกคนดู${name ? name : "เพื่อน"}ไว้เป็นตัวอย่างนะ นักเรียนของโรงเรียนเราต้องแบบนี้ล่ะ!`}
           characterImg="teacher"

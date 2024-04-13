@@ -8,11 +8,11 @@ export default function Page() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
-          className="absolute inset-x-0 p-10 flex justify-center items-center"
+          className="absolute inset-x-0 flex items-center justify-center p-10"
         >
-          <img src="/img/test.png" className="w-[85%] h-[85%]" />
+          <img src="/img/test.png" className="h-[85%] w-[85%]" alt="test" />
         </motion.div>
       </div>
-      </Link>
+    </Link>
   );
 }
