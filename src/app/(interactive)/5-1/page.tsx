@@ -10,14 +10,13 @@ export default function Page() {
     return [
       "ตอนนี้คุณออกจากความคิดของฮาร์ท\nกลับมาสู่โลกความเป็นจริงอีกครั้ง",
       "คุณสังเกตเห็นรอยยิ้มเล็ก ๆ ที่ค่อย ๆ\nปรากฎขึ้นบนหน้าของฮาร์ท",
-      "แต่ดูเหมือนฮาร์ทจะยังมีบางอย่าง\nติดค้างในใจอยู่",
     ];
   }, []);
 
   return (
     <>
       <Link
-        href={dialogNo === dialog.length - 1 ? "/5-2" : "#"}
+        href={dialogNo === dialog.length - 1 ? "/5-1a" : "#"}
         onClick={() => {
           setDialogNo(dialogNo === dialog.length - 1 ? dialogNo : dialogNo + 1);
         }}

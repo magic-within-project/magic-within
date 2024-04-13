@@ -236,6 +236,10 @@ export const backgroundMapConfig = {
     imagePreload: [],
   },
   "5-1": {
+    image: "/bg/5-1.webp",
+    imagePreload: [],
+  },
+  "5-1a": {
     image: "/bg/3-3.webp",
     imagePreload: [],
   },
@@ -256,27 +260,27 @@ export const backgroundMapConfig = {
     imagePreload: [],
   },
   "5-6": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-6.webp",
     imagePreload: [],
   },
   "5-7": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-6.webp",
     imagePreload: [],
   },
   "5-8": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-8.webp",
     imagePreload: [],
   },
   "5-9": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-6.webp",
     imagePreload: [],
   },
   "5-10": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-6.webp",
     imagePreload: [],
   },
   "5-11": {
-    image: "/bg/3-3.webp",
+    image: "/bg/5-6.webp",
     imagePreload: ["/bg/3-1.webp"],
   },
   "5-12": {
