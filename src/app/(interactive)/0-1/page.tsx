@@ -14,7 +14,7 @@ export default function Page() {
             duration: 1,
             delay: 0.5,
           }}
-          className="fixed flex min-h-screen w-full items-center justify-center bg-0-0 bg-cover bg-no-repeat"
+          className="fixed flex min-h-screen w-full max-w-md items-center justify-center bg-0-0 bg-cover bg-no-repeat"
         >
           <Image
             src="/img/logo_MW2lines.webp"

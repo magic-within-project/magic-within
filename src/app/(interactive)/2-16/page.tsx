@@ -13,6 +13,7 @@ export default function Page() {
           isCenter={false}
           height={464}
           delay={0.5}
+          reanimate="textAndCharacter"
         />
       </main>
     </>
