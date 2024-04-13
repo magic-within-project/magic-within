@@ -32,6 +32,7 @@ export default function Page() {
             );
           }}
           animationKey={dialogNo}
+          reanimate={dialogNo === 0 ? undefined : "text"}
         />
       </main>
     </>
