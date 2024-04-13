@@ -13,7 +13,7 @@ import { DialogTrigger } from "~/components/dialog";
 import React from "react";
 
 export default function Page() {
-  const supportQuote = typeof window !== "undefined" ? localStorage.getItem("doubtYourselfFeeling") : null;
+  const supportQuote = typeof window !== "undefined" ? localStorage.getItem("supportQuote") : null;
   const [downloadAlert, setDownloadAlert] = useState<boolean>(false);
   const [userAgentData, setUserAgentData] = useState<string>();
 
