@@ -17,9 +17,9 @@ export default function Page() {
         >
           <div className="flex flex-col gap-4">
             <p className="font-bold">
-              "เพราะภายใต้การเติบโตของคุณ
+              &quot;เพราะภายใต้การเติบโตของคุณ
               <br />
-              มีเวทมนตร์ที่แสนวิเศษซ่อนอยู่เสมอ"
+              มีเวทมนตร์ที่แสนวิเศษซ่อนอยู่เสมอ&quot;
             </p>
           </div>
           <div className="absolute bottom-[14vh]">แตะเพื่อไปต่อ</div>

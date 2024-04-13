@@ -14,7 +14,18 @@ const InteractiveBackground = () => {
   useEffect(() => {
     switch (page) {
       default:
-        setBgImgSrc(backgroundMapConfig[page].image);
+        setBgImgSrc(
+          backgroundMapConfig[page]
+            ? backgroundMapConfig[page].image
+            : undefined,
+        );
+        break;
+      case "6-19" :
+        backgroundMapConfig[page].image.forEach((image, index) => {
+          setTimeout(() => {
+            setBgImgSrc(image);
+          }, index * backgroundMapConfig[page].stopMotionDuration);
+        });
         break;
       case "6-25":
         backgroundMapConfig[page].image.forEach((image, index) => {
@@ -32,7 +43,8 @@ const InteractiveBackground = () => {
   }, [page, router]);
 
   const imagePreloadSrc = useMemo(() => {
-    const imagePreloadSrc = backgroundMapConfig[page].imagePreload;
+    if (!backgroundMapConfig[page]) return [] as [];
+    const imagePreloadSrc = backgroundMapConfig[page].imagePreload || [];
     return imagePreloadSrc;
   }, [page]);
 
