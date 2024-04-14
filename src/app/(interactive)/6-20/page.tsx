@@ -23,10 +23,10 @@ export default function page() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1} }}
         >
-          <div className="absolute top-5 left-[80px] grid w-[252px] justify-items-center">
+          <div className="absolute top-[2%] left-[19%] grid w-[60%] justify-items-center">
             <div
               style={{ fontSize: `${len}rem` }}
-              className="font-size:30% mt-[102px] content-center justify-self-center text-wrap text-center text-brown drop-shadow "
+              className="font-size:30% mt-[40%] content-center justify-self-center text-wrap text-center text-brown drop-shadow "
             >
               <h1>{doubtYourselfFeeling}</h1>
             </div>
@@ -50,13 +50,13 @@ export default function page() {
           >
             <div className=" w-1024 h-screen bg-black opacity-60"></div>
             <div className="animate-pulse">
-              <div className="absolute right-[65px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full bg-white ">
+              <div className="absolute right-[16%] top-[8%] flex h-11 w-11 items-center justify-center gap-2.5 rounded-full bg-white ">
                 <DownloadIcon />
               </div>
-              <h1 className="absolute right-32 top-[90px] text-sm text-white">
+              <h1 className="absolute right-[28%] top-[11%] text-sm text-white">
                 ดาวน์โหลดรูปภาพ
               </h1>
-              <h1 className="absolute right-32 top-[110px] text-xs text-[#FFBA5A]">
+              <h1 className="absolute right-[28%] top-[14%] text-xs text-[#FFBA5A]">
                 {" "}
                 กดเพื่อไปต่อ
               </h1>

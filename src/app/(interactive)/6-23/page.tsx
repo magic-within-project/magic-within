@@ -101,11 +101,11 @@ export default function Page() {
           id="exportedWords"
         >
           
-            <h1 className="absolute left-[70px] mt-[160px] text-wrap text-sm text-white drop-shadow">
+            <h1 className="absolute left-[15%] mt-[160px] text-wrap text-sm text-white drop-shadow">
               ถึงตัวฉันเอง...
             </h1>
-            <div className="h-2048 absolute top-5  mx-24  grid w-[300px]">
-              <h1 className="absolute right-[65px] mt-[205px] content-center justify-self-center text-wrap text-center text-sm text-white drop-shadow">
+            <div className="h-2048 absolute top-[2%]  mx-24  grid w-[300px]">
+              <h1 className="absolute right-[25%] mt-[205px] content-center justify-self-center text-wrap text-center text-sm text-white drop-shadow">
                 {supportQuote}
               </h1>
 
@@ -119,7 +119,7 @@ export default function Page() {
         <Dialog>
           <DialogTrigger
             asChild
-            className="absolute right-[50px] top-[75px] z-20 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full "
+            className="absolute right-[12%] top-[8%] z-20 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full "
           >
             {userAgentData === "iPhone" ? (
               <div onClick={shareImage}>
@@ -136,11 +136,11 @@ export default function Page() {
           </AnimatePresence>
         </Dialog>
 
-        <Link className="abolute h-2048 w-1024 top-0 bg-black" href="/6-24">
+        <Link className="abolute h-2048 w-1024 top-[0%] bg-black" href="/6-24">
           <div className="grid h-5/6 justify-items-center" onClick={click}>
             {/* <h1 style={{filter: `blur(5px)`}}className="absolute justify-self-center bottom-6 bg-white rounded-3xl p-3 text-transparent">แตะเพื่อไปต่อ</h1> */}
 
-            <h1 className="absolute justify-self-center bottom-7 left-[145px] rounded-3xl p-2 animate-pulse drop-shadow ">
+            <h1 className="absolute justify-self-center bottom-[3%] left-[37%] rounded-3xl p-2 animate-pulse drop-shadow ">
               แตะเพื่อไปต่อ
             </h1>
           </div>
