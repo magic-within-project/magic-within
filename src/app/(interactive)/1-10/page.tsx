@@ -23,7 +23,6 @@ export default function Page() {
           characterImg="director"
           nextPage={dialogNo === dialog.length - 1 ? "/1-11" : "#"}
           height={356}
-          delay={1}
           handleClick={() => {
             setDialogNo(
               dialogNo === dialog.length - 1 ? dialogNo : dialogNo + 1,
