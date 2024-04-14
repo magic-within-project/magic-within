@@ -12,7 +12,7 @@ export default function Page() {
           nextPage="2-5"
           isCenter={false}
           height={464}
-          delay={0.5}
+          reanimate="text"
         />
       </main>
     </>

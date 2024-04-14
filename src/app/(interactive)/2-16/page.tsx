@@ -12,7 +12,6 @@ export default function Page() {
           nextPage="/2-17"
           isCenter={false}
           height={464}
-          delay={0.5}
           reanimate="textAndCharacter"
         />
       </main>

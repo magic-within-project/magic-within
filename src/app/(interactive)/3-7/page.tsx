@@ -11,6 +11,7 @@ export default function Page() {
           nextPage="3-8"
           isCenter={false}
           boxSize={"s"}
+          reanimate="text"
         />
       </main>
     </>

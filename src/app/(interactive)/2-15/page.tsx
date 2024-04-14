@@ -11,7 +11,6 @@ export default function Page() {
           nextPage="/2-16"
           isCenter={false}
           height={464}
-          delay={0.5}
           reanimate="text"
         />
       </main>
