@@ -18,14 +18,70 @@ export const soundPageMap: Record<
     backgroundVolume?: number;
   }
 > = {
-  "2-1": {
+  "0-8": {
     soundEffect: {
-      sound: "/sound/sound-effect/scene-2-night-ambience.mp3",
+      sound: "/sound/effect/magical.mp3",
     },
   },
-  "4-9": {
+  "1-1": {
     soundEffect: {
-      sound: "/sound/sound-effect/scene-4-sliding-paper-seq.mp3",
+      sound: "/sound/effect/crowd-talking.mp3",
+      loop: true,
+    },
+  },
+  "1-5": {
+    soundEffect: {
+      sound: "/sound/effect/crowd-talking.mp3",
+      loop: true,
+    },
+  },
+  "1-6": {
+    soundEffect: {
+      sound: "/sound/effect/crowd-talking.mp3",
+      loop: true,
+    },
+  },
+  "1-7": {
+    soundEffect: {
+      sound: "/sound/effect/school-alarm.mp3",
+      volume: 1,
+    },
+    backgroundVolume: 0.2,
+  },
+  "1-9": {
+    soundEffect: {
+      sound: "/sound/effect/magic-wand.mp3",
+      volume: 1,
+    },
+    backgroundVolume: 0.2,
+  },
+  "2-11": {
+    soundEffect: {
+      sound: "/sound/effect/glitter-shot.mp3",
+      volume: 1,
+    },
+  },
+  "2-12": {
+    soundEffect: {
+      sound: "/sound/effect/glitter-shot.mp3",
+      volume: 1,
+    },
+  },
+  "2-13": {
+    soundEffect: {
+      sound: "/sound/effect/glitter-shot.mp3",
+      volume: 1,
+    },
+  },
+  "4-1": {
+    soundEffect: {
+      sound: "/sound/effect/magical.mp3",
+      volume: 1,
+    },
+  },
+  "6-10": {
+    soundEffect: {
+      sound: "/sound/effect/magic-wand.mp3",
       volume: 1,
     },
   },
