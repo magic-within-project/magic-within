@@ -25,7 +25,7 @@ const Sounds = () => {
     volume?: number;
   }>();
 
-  const fadeDuration = 1000;
+  const fadeDuration = 250;
 
   useEffect(() => {
     const nextSound = scenePageMap[scene];
