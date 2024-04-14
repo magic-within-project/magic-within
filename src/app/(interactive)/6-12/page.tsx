@@ -14,7 +14,7 @@ export default function Page() {
         <>
         <motion.div
             initial={{opacity:0}}
-            animate={{opacity:1,transition:{duration:1,delay:1}}}
+            animate={{opacity:1,transition:{duration:1,delay:0.5}}}
             >
         <div className="grid justify-items-center">
             
@@ -22,9 +22,9 @@ export default function Page() {
             
 
             <textarea className="h-80 w-5/6 justify-self-center mt-8 rounded-2xl p-5 drop-shadow-md" 
-            placeholder="โปรดพิมพ์คำตอบของคุณ" required = {true} maxLength={300} onChange={(e)=>setChar(e.target.value)}></textarea>
+            placeholder="โปรดพิมพ์คำตอบของคุณ" required = {true} maxLength={300} onChange={(e)=>{setChar(e.target.value)}}></textarea>
             <div className = "justify-self-center">
-            <h1 className="text-gray-600 absolute right-16 bottom-72">{char.length}/300</h1>
+            <h1 className="text-gray-600 absolute right-16 bottom-[300px]">{char.length}/300</h1>
             <Next char={char} handleClick={handleClick} />
             </div>
            

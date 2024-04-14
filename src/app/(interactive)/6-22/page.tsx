@@ -19,7 +19,7 @@ export default function page() {
 
   return (
     <div className="w-1024 h-screen bg-[url(/bg/bg6-20.webp)] bg-[length:450px_900px] bg-center">
-      <div className="absolute top-5 mx-24 grid w-[252px] justify-items-center">
+      <div className="absolute top-5 left-[80px] grid w-[252px] justify-items-center">
         <div
           style={{ fontSize: `${len}rem` }}
           className="font-size:30% mt-[102px] content-center justify-self-center text-wrap text-center text-brown drop-shadow "
@@ -43,11 +43,11 @@ export default function page() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
       >
-        <div className="absolute right-[85px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 ">
+        <div className="absolute right-[65px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 ">
           <DownloadIcon />
         </div>
         <div className="w-1024 grid h-screen bg-black opacity-60"></div>
-        <div className="absolute left-16 top-10 mt-64 grid h-52 w-80 rounded-xl  bg-white opacity-100  drop-shadow-lg">
+        <div className="absolute left-12 top-10 mt-64 grid h-52 w-80 rounded-xl  bg-white opacity-100  drop-shadow-lg">
           <h1 className="mb-0 mt-8 justify-self-center text-xl font-medium text-darkPurple">
             ยืนยันเพื่อไปแผ่นต่อไป
           </h1>

@@ -12,7 +12,7 @@ export default function page(){
 
             <motion.div
             initial={{opacity:0}}
-            animate={{opacity:1,transition:{duration:1,delay:1}}}
+            animate={{opacity:1,transition:{duration:1,delay:0.5}}}
             >
                 <h1 className="text-white mt-32 text-center">คุณกลับเข้าสู่ทางเดิน</h1>
                 <h1 className="text-white text-center">กลับห้องของคุณ</h1>

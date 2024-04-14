@@ -10,7 +10,7 @@ export default function page() {
   let len = selfReframing?.length ?? 0;
   len += doubtYourselfFeeling?.length ?? 0;
 
-  if (len > 750) {
+  if (len > 700) {
     len = 0.45 + ((3000 - len) * 0.33) / 2250;
   } else {
     len = 0.8;
@@ -21,9 +21,9 @@ export default function page() {
       <div className="w-1024 h-screen bg-[url(/bg/bg6-20.webp)] bg-[length:450px_900px] bg-center">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+          animate={{ opacity: 1, transition: { duration: 1} }}
         >
-          <div className="absolute top-5 mx-24 grid w-[252px] justify-items-center">
+          <div className="absolute top-5 left-[80px] grid w-[252px] justify-items-center">
             <div
               style={{ fontSize: `${len}rem` }}
               className="font-size:30% mt-[102px] content-center justify-self-center text-wrap text-center text-brown drop-shadow "
@@ -50,13 +50,13 @@ export default function page() {
           >
             <div className=" w-1024 h-screen bg-black opacity-60"></div>
             <div className="animate-pulse">
-              <div className="absolute right-[85px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full bg-white ">
+              <div className="absolute right-[65px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full bg-white ">
                 <DownloadIcon />
               </div>
-              <h1 className="absolute right-32 top-[100px] text-sm text-white">
+              <h1 className="absolute right-32 top-[90px] text-sm text-white">
                 ดาวน์โหลดรูปภาพ
               </h1>
-              <h1 className="absolute right-32 top-[120px] text-xs text-[#FFBA5A]">
+              <h1 className="absolute right-32 top-[110px] text-xs text-[#FFBA5A]">
                 {" "}
                 กดเพื่อไปต่อ
               </h1>
