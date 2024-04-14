@@ -115,8 +115,11 @@ export default function Page() {
         <div>
           <div className="z-10 h-screen w-1024 bg-[url(/bg/bg6-20.webp)] bg-[length:450px_900px] bg-center" id="exportedWords"  >
             <div>
-            <div className="absolute top-5 left-[80px] grid w-[252px] justify-items-center">
-                <div style={{ fontSize: `${len}rem` }} className="mt-[102px] justify-self-center text-center content-center font-size:30% text-wrap text-brown drop-shadow ">
+            <div className="absolute top-[2%] left-[19%] grid w-[60%] justify-items-center">
+            <div
+              style={{ fontSize: `${len}rem` }}
+              className="font-size:30% mt-[40%] content-center justify-self-center text-wrap text-center text-brown drop-shadow "
+            >
                   <h1>{doubtYourselfFeeling}</h1>
                 </div>
                 <div style={{ fontSize: `${len}rem` }} className=" mt-1 justify-self-center text-center content-center text-wrap text-brown drop-shadow">
@@ -134,7 +137,7 @@ export default function Page() {
         </div>
       
         <Dialog>
-                <DialogTrigger asChild className="z-20 absolute right-[65px] top-16 flex h-11 w-11 items-center justify-center gap-2.5 rounded-full ">
+                <DialogTrigger asChild className="z-20 absolute right-[16%] top-[8%] flex h-11 w-11 items-center justify-center gap-2.5 rounded-full ">
                     {userAgentData === "iPhone" ? (
                         <div onClick={shareImage}>
                             <DownloadIcon />
