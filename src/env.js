@@ -8,6 +8,13 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    FB_APIKEY: z.string(),
+    FB_AUTHDOMAIN: z.string(),
+    FB_PROJECTID: z.string(),
+    FB_STORAGEBUCKET: z.string(),
+    FB_MESSAGINGSENDERID: z.string(),
+    FB_APPID: z.string(),
+    FB_MEASUREMENTID: z.string(),
   },
 
   /**
@@ -17,13 +24,6 @@ export const env = createEnv({
    */
   client: {
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
-    NEXT_PUBLIC_FB_APIKEY: z.string(),
-    NEXT_PUBLIC_FB_AUTHDOMAIN: z.string(),
-    NEXT_PUBLIC_FB_PROJECTID: z.string(),
-    NEXT_PUBLIC_FB_STORAGEBUCKET: z.string(),
-    NEXT_PUBLIC_FB_MESSAGINGSENDERID: z.string(),
-    NEXT_PUBLIC_FB_APPID: z.string(),
-    NEXT_PUBLIC_FB_MEASUREMENTID: z.string(),
   },
 
   /**
@@ -32,14 +32,13 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
-    NEXT_PUBLIC_FB_APIKEY: process.env.NEXT_PUBLIC_FB_APIKEY,
-    NEXT_PUBLIC_FB_AUTHDOMAIN: process.env.NEXT_PUBLIC_FB_AUTHDOMAIN,
-    NEXT_PUBLIC_FB_PROJECTID: process.env.NEXT_PUBLIC_FB_PROJECTID,
-    NEXT_PUBLIC_FB_STORAGEBUCKET: process.env.NEXT_PUBLIC_FB_STORAGEBUCKET,
-    NEXT_PUBLIC_FB_MESSAGINGSENDERID:
-      process.env.NEXT_PUBLIC_FB_MESSAGINGSENDERID,
-    NEXT_PUBLIC_FB_APPID: process.env.NEXT_PUBLIC_FB_APPID,
-    NEXT_PUBLIC_FB_MEASUREMENTID: process.env.NEXT_PUBLIC_FB_MEASUREMENTID,
+    FB_APIKEY: process.env.FB_APIKEY,
+    FB_AUTHDOMAIN: process.env.FB_AUTHDOMAIN,
+    FB_PROJECTID: process.env.FB_PROJECTID,
+    FB_STORAGEBUCKET: process.env.FB_STORAGEBUCKET,
+    FB_MESSAGINGSENDERID: process.env.FB_MESSAGINGSENDERID,
+    FB_APPID: process.env.FB_APPID,
+    FB_MEASUREMENTID: process.env.FB_MEASUREMENTID,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
