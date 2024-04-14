@@ -15,7 +15,7 @@ export default function Page() {
           }}
           className="flex min-h-screen flex-col items-center text-center text-white"
         >
-          <div className="fixed -z-10 h-full w-full bg-black opacity-30" />
+          <div className="fixed -z-10 h-full w-full max-w-md bg-black opacity-30" />
           <p className="absolute top-[20vh] leading-7">
             ความกังวลที่ฮาร์ทกักเก็บเอาไว้
             <br />
